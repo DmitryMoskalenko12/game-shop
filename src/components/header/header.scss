@@ -62,3 +62,35 @@
     }
   }
 }
+
+@media(max-width: 1200px){
+  .header {
+    &__input {
+      width: 300px;
+    }
+  }
+}
+@media(max-width: 992px){
+  .header {
+    &__wraplogo {
+      width: 130px;
+      img {
+        object-fit: contain;
+      }
+    }
+    &__input {
+      width: 250px;
+      height: 35px;
+    }
+    &__phonelink {
+      font-size: 15px;
+  }
+  }
+}
+@media(max-width: 768px){
+  .header {
+    &__input {
+      width: 300px;
+    }
+  }
+}

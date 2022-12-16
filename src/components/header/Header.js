@@ -12,7 +12,7 @@ const Header = () => {
       <ul className="header__up">
         <li className="header__logo">
           <div className="header__wraplogo">
-            <img src={logo} alt="logo" />
+            <a href="#"><img src={logo} alt="logo" /></a>
           </div>
         </li>
         <li className="header__search">
@@ -23,7 +23,7 @@ const Header = () => {
           <div className="header__phoneimg">
             <img src={phone} alt="phone" />
           </div>
-          <a className='header__phonelink' href="tel:0667180373">+380 (66) 718-03-73</a>
+          <a className='header__phonelink red' href="tel:0667180373">+380 (66) 718-03-73</a>
         </li>
         <li className="header__human">
           <div className="header__wraphuman">
