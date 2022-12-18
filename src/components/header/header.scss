@@ -195,6 +195,7 @@
       transform: translateY(3px) rotate(45deg);
       margin-top: 0;
       transition: 0.6s all;
+      background: #F9A43F;
       }
       &:nth-child(2){
       display: none;
@@ -203,6 +204,7 @@
       transform: translateY(3px) rotate(-45deg);
       margin-top: 0;
       transition: 0.6s all;
+      background: #F9A43F;
       }
     }
     &__search {
@@ -237,7 +239,7 @@
       background: #FFFFFF;
       list-style-type: none;
       padding-left: 0;
-      z-index: 2;
+      z-index: 2000;
       left: -100%;
     }
     .asideactive {
