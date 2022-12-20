@@ -8,19 +8,26 @@ import basket from '../../icons/bascet.png';
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
-
+  const asideLiUp = [
+    {clas: 'header__asideli', href: "#", content: 'Настольные игры'},
+    {clas: 'header__asideli', href: "#", content: 'Warhammer 40000'},
+    {clas: 'header__asideli', href: "#", content: 'Magic:the Gathering'},
+    {clas: 'header__asideli', href: "#", content: 'Аксессуары для игр'},
+    {clas: 'header__asideli', href: "#", content: 'Краски'},
+    {clas: 'header__asideli', href: "#", content: 'Товары для детей'},
+    {clas: 'header__asideli', href: "#", content: 'Аксессуары для моделизма'}
+  ]
   return(
     <header className='header'>
      <div className="container">
       <div className={burger ? "header__shadow" : ''}>
         <ul className={burger ? "header__asidemenu asideactive" : "header__asidemenu" }>
-          <li className="header__asideli"><a href="#">Настольные игры</a></li>
-          <li className="header__asideli"><a href="#">Warhammer 40000</a></li>
-          <li className="header__asideli"><a href="#">Magic:the Gathering</a></li>
-          <li className="header__asideli"><a href="#">Аксессуары для игр</a></li>
-          <li className="header__asideli"><a href="#">Краски</a></li>
-          <li className="header__asideli"><a href="#">Товары для детей</a></li>
-          <li className="header__asideli"><a href="#">Аксессуары для моделизма</a></li>
+         {
+          asideLiUp.map(({clas, href, content}) => {
+            return  <li className={clas}><a href={href}>{content}</a></li>
+          })
+         }
+    
           <li  className='header__hr'></li>
           <li className="header__asideli"><a href="#">Мероприятия</a></li>
           <li className="header__asideli"><a href="#">Блог</a></li>

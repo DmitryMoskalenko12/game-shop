@@ -243,10 +243,26 @@
       z-index: 2000;
       top: 80px;
       left: -100%;
+      transition: 0.6s all;
     }
     .asideactive {
       left: 0;
       transition: 0.6s all;
+    }
+    &__asideli {
+      margin-top: 10px;
+      a {
+        font-weight: 700;
+        font-size: 15px;
+        color: #2A2A2A;
+        text-decoration: none;
+      }
+    }
+    &__hr {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      position: relative;
+      border-top: 1px solid black;
     }
   }
 }
