@@ -12,8 +12,8 @@ const Header = () => {
   return(
     <header className='header'>
      <div className="container">
-      <div className={ burger ? "header__shadow" : ''}>
-        <ul className={burger ? "header__asidemenu asideactive": "header__asidemenu" }>
+      <div className={burger ? "header__shadow" : ''}>
+        <ul className={burger ? "header__asidemenu asideactive" : "header__asidemenu" }>
           <li className="header__asideli"><a href="#">Настольные игры</a></li>
           <li className="header__asideli"><a href="#">Warhammer 40000</a></li>
           <li className="header__asideli"><a href="#">Magic:the Gathering</a></li>
@@ -21,7 +21,13 @@ const Header = () => {
           <li className="header__asideli"><a href="#">Краски</a></li>
           <li className="header__asideli"><a href="#">Товары для детей</a></li>
           <li className="header__asideli"><a href="#">Аксессуары для моделизма</a></li>
+          <li  className='header__hr'></li>
+          <li className="header__asideli"><a href="#">Мероприятия</a></li>
+          <li className="header__asideli"><a href="#">Блог</a></li>
+          <li className="header__asideli"><a href="#">О центре</a></li>
+          <li className="header__asideli"><a href="#">Контакты</a></li>
         </ul>
+    
       </div>
       <ul className="header__up">
         <li className="header__burger">
@@ -62,7 +68,5 @@ const Header = () => {
   )
 }
 export default Header;
-
-
 
 

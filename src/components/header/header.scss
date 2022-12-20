@@ -223,7 +223,7 @@
     }
     &__shadow {
       display: block;
-      position: absolute;
+      position: fixed;
       top: 80px;
       width: 100%;
       height: 100vh;
@@ -233,13 +233,15 @@
     }
     &__asidemenu {
       display: block;
-      position: absolute;
+      position: fixed;
       width: 268px;
       height: 100vh;
       background: #FFFFFF;
       list-style-type: none;
-      padding-left: 0;
+      padding-left: 33px;
+      padding-top: 17px;
       z-index: 2000;
+      top: 80px;
       left: -100%;
     }
     .asideactive {
