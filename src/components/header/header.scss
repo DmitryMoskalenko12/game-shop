@@ -264,5 +264,24 @@
       position: relative;
       border-top: 1px solid black;
     }
+    .activeli {
+      position: relative;
+      background-color: #F9A43F;
+      &::after {
+        content: '>';
+         position: absolute;
+         margin-left: 46px;
+         color: #2A2A2A;
+         font-size: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         top: -5px;
+         right: 10px;
+      }
+      a {
+        color: black;
+      }
+    }
   }
 }
