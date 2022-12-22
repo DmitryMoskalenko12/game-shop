@@ -1,5 +1,5 @@
 import './header.scss';
-import { useState, useMemo } from 'react';
+import { useState} from 'react';
 import logo from '../../image/logo.png';
 import lup from '../../icons/lup.png';
 import phone from '../../icons/phone.png';
