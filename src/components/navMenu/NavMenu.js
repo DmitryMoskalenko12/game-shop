@@ -2,13 +2,18 @@ import './navMenu.scss';
 import instagram from '../../icons/insta.png';
 import vk from '../../icons/vk.png';
 import fb from '../../icons/fb.png';
+import Modal from '../modal/Modal';
+import Catalog from '../catalog/Catalog';
+import { useState } from 'react';
 
 const NavMenu = () => {
+  const [modal, setModal] = useState(false);
+
   return(
     <nav className="menu">
      <div className="container">
       <ul className="menu__main">
-          <li className="menu__catalog">
+          <li onClick={() => setModal(true)} className="menu__catalog">
            <a href="#">
             <div className="menu__burger">
                 <span></span>
@@ -44,6 +49,9 @@ const NavMenu = () => {
           </li>
         </ul>
      </div>
+    {
+      modal ? <Modal setModal = {setModal}><Catalog setModal = {setModal}/></Modal> : null
+    }
     </nav>
   )
 }
