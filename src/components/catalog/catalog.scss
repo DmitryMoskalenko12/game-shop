@@ -34,6 +34,24 @@
   .start {
     width: 100%;
     padding-left: 30px;
-    background: olive;
+
+  }
+  &__link {
+    margin-top: 5px;
+    padding: 5px;
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      color: #2A2A2A;
+      text-decoration: none;
+    }
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+  &__categoruclose {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A2A2A;
   }
 }
