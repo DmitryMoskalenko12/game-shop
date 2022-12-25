@@ -39,15 +39,32 @@
   &__link {
     margin-top: 5px;
     padding: 5px;
+    position: relative;
+    &:last-child {
+      &::after {
+        content: '>';
+        position: absolute;
+        right: 18px;
+        top: 18px;
+      }
+    }
+    &::after {
+      content: '>';
+      position: absolute;
+      right: 18px;
+    }
     a {
       font-weight: 700;
       font-size: 16px;
       color: #2A2A2A;
       text-decoration: none;
     }
-    &:last-child {
-      margin-bottom: 45px;
-    }
+  }
+  .last {
+    display: block;
+    width: 159px;
+    height: 18px;
+    margin-bottom: 45px;
   }
   &__categoruclose {
     font-weight: 700;
