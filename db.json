@@ -2,15 +2,15 @@
   "warhammer": [
     {"title": "Warhammer 40000", "id": 1},
     {"name": "Альтернативные миниатюры", "count": "(69)", "id": 2},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 3},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 4},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 5},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 6},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 7},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 8},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 9},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 10},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 11},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 12}
+    {"name": "Warhammer 40k (400)", "count": "(400)", "id": 3},
+    {"name": "Age of Sigmar", "count": "(263)", "id": 4},
+    {"name": "Warcry", "count": "(49)", "id": 5},
+    {"name": "Necromunda", "count": "(21)", "id": 6},
+    {"name": "Lord of the Rings", "count": "(16)", "id": 7},
+    {"name": "Blood Bowl", "count": "(28)", "id": 8},
+    {"name": "Titanicus", "count": "(4)", "id": 9},
+    {"name": "Warcry", "count": "(49)", "id": 10},
+    {"name": "Warhammer: Underworlds", "count": "(22)", "id": 11},
+    {"name": "Kiltem", "count": "(4)", "id": 12}
   ]
 }
