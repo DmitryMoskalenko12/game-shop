@@ -1,20 +1,22 @@
 import { useState, useEffect } from 'react';
 import './catalog.scss';
-import useHttp from '../../hooks/http.hook';
+import useShopService from '../../services/shopServices';
 
 const Catalog = (props) => {
   const [activeLink, setActiveLink] = useState('Warhammer 40000');
-  const {request} = useHttp();
-
+  const [choice, setChoice] = useState([]);
+  const {choiceMenu} = useShopService();
+  
   useEffect(() => {
     localStorage.setItem('active', activeLink)
   },[activeLink])
-
+   
   useEffect(() => {
-   request('http://localhost:3001/warhammer')
-   .then((res) => console.log(res))
+    choiceMenu()
+    .then((res) => setChoice(res))
+    .catch(() => console.log('error'))
   },[])
-
+ 
   const {setModal} = props;
   const catalogLink = [
     {clazz: 'catalog__link start', href:'#', content: 'Настольные игры', id: 1},
@@ -44,10 +46,17 @@ const Catalog = (props) => {
           })
         }
       </ul>
+      <ul className="catalog__choice">
+        {
+          choice.map(({count, title,name, id}) => {
+            return <li key={id}>{name}{count}{title} </li>
+          })
+        }
+      </ul>
     </nav>
   )
 }
 export default Catalog;
 
 
-
+ 
