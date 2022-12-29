@@ -1,16 +1,28 @@
 {
-  "warhammer": [
-    {"title": "Warhammer 40000", "id": 1},
-    {"name": "Альтернативные миниатюры", "count": "(69)", "id": 2},
-    {"name": "Warhammer 40k (400)", "count": "(400)", "id": 3},
-    {"name": "Age of Sigmar", "count": "(263)", "id": 4},
-    {"name": "Warcry", "count": "(49)", "id": 5},
-    {"name": "Necromunda", "count": "(21)", "id": 6},
-    {"name": "Lord of the Rings", "count": "(16)", "id": 7},
-    {"name": "Blood Bowl", "count": "(28)", "id": 8},
-    {"name": "Titanicus", "count": "(4)", "id": 9},
-    {"name": "Warcry", "count": "(49)", "id": 10},
-    {"name": "Warhammer: Underworlds", "count": "(22)", "id": 11},
-    {"name": "Kiltem", "count": "(4)", "id": 12}
-  ]
-}
+    "warhammer": [
+      {"title": "Warhammer 40000", "uniId": "Warhammer 40000", "id": 1},
+      {"name": "Альтернативные миниатюры","uniId": "Warhammer 40000", "count": "(69)", "id": 2},
+      {"name": "Warhammer 40k (400)","uniId": "Warhammer 40000", "count": "(400)", "id": 3},
+      {"name": "Age of Sigmar","uniId": "Warhammer 40000", "count": "(263)", "id": 4},
+      {"name": "Warcry","uniId": "Warhammer 40000", "count": "(49)", "id": 5},
+      {"name": "Necromunda","uniId": "Warhammer 40000", "count": "(21)", "id": 6},
+      {"name": "Lord of the Rings","uniId": "Warhammer 40000", "count": "(16)", "id": 7},
+      {"name": "Blood Bowl","uniId": "Warhammer 40000", "count": "(28)", "id": 8},
+      {"name": "Titanicus","uniId": "Warhammer 40000", "count": "(4)", "id": 9},
+      {"name": "Warcry","uniId": "Warhammer 40000", "count": "(49)", "id": 10},
+      {"name": "Warhammer: Underworlds","uniId": "Warhammer 40000", "count": "(22)", "id": 11},
+      {"name": "Kiltem","uniId": "Warhammer 40000", "count": "(4)", "id": 12},
+      {"title": "Краски","uniId": "Краски", "id": 13},
+      {"name": "Альтернативные миниатюры","uniId": "Краски", "count": "(69)", "id": 14},
+      {"name": "Warhammer 40k (400)","uniId": "Краски", "forFilter": "Warhammer 40000", "count": "(400)", "id": 15},
+      {"name": "Age of Sigmar","uniId": "Краски", "count": "(263)", "id": 16},
+      {"name": "Warcry","uniId": "Краски", "count": "(49)", "id": 17},
+      {"name": "Necromunda","uniId": "Краски", "count": "(21)", "id": 18},
+      {"name": "Lord of the Rings","uniId": "Краски", "count": "(16)", "id": 19},
+      {"name": "Blood Bowl","uniId": "Краски", "count": "(28)", "id": 20},
+      {"name": "Titanicus","uniId": "Краски", "count": "(4)", "id": 21},
+      {"name": "Warcry","uniId": "Краски", "count": "(49)", "id": 22},
+      {"name": "Warhammer: Underworlds","uniId": "Краски", "count": "(22)", "id": 23},
+      {"name": "Kiltem","uniId": "Краски", "count": "(4)", "id": 24}
+    ]
+  }

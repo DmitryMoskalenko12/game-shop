@@ -1,4 +1,5 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import catalog from '../components/catalog/catalogSlice';
 
 const stringMiddleware = () => (next) => (action) =>{
   if (typeof action === 'string') {
@@ -10,7 +11,7 @@ const stringMiddleware = () => (next) => (action) =>{
  }
 
 const store = configureStore({
-  reducer:{},
+  reducer:{catalog},
   middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware),
   devTools: process.env.NODE_ENV !== 'production',
 })
