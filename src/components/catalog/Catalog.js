@@ -1,22 +1,13 @@
 import { useState, useEffect } from 'react';
 import './catalog.scss';
-import useShopService from '../../services/shopServices';
 
 const Catalog = (props) => {
   const [activeLink, setActiveLink] = useState('Warhammer 40000');
-  const [choice, setChoice] = useState([]);
-  const {choiceMenu} = useShopService();
-  
+
   useEffect(() => {
     localStorage.setItem('active', activeLink)
   },[activeLink])
    
-  useEffect(() => {
-    choiceMenu()
-    .then((res) => setChoice(res))
-    .catch(() => console.log('error'))
-  },[])
- 
   const {setModal} = props;
   const catalogLink = [
     {clazz: 'catalog__link start', href:'#', content: 'Настольные игры', id: 1},
@@ -47,11 +38,7 @@ const Catalog = (props) => {
         }
       </ul>
       <ul className="catalog__choice">
-        {
-          choice.map(({count, title,name, id}) => {
-            return <li key={id}>{name}{count}{title} </li>
-          })
-        }
+        {}
       </ul>
     </nav>
   )
@@ -59,4 +46,3 @@ const Catalog = (props) => {
 export default Catalog;
 
 
- 
