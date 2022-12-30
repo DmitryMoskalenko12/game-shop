@@ -2,7 +2,7 @@
     "warhammer": [
       {"title": "Warhammer 40000", "uniId": "Warhammer 40000", "id": 1},
       {"name": "Альтернативные миниатюры","uniId": "Warhammer 40000", "count": "(69)", "id": 2},
-      {"name": "Warhammer 40k (400)","uniId": "Warhammer 40000", "count": "(400)", "id": 3},
+      {"name": "Warhammer 40k","uniId": "Warhammer 40000", "count": "(400)", "id": 3},
       {"name": "Age of Sigmar","uniId": "Warhammer 40000", "count": "(263)", "id": 4},
       {"name": "Warcry","uniId": "Warhammer 40000", "count": "(49)", "id": 5},
       {"name": "Necromunda","uniId": "Warhammer 40000", "count": "(21)", "id": 6},
@@ -14,7 +14,7 @@
       {"name": "Kiltem","uniId": "Warhammer 40000", "count": "(4)", "id": 12},
       {"title": "Краски","uniId": "Краски", "id": 13},
       {"name": "Альтернативные миниатюры","uniId": "Краски", "count": "(69)", "id": 14},
-      {"name": "Warhammer 40k (400)","uniId": "Краски", "forFilter": "Warhammer 40000", "count": "(400)", "id": 15},
+      {"name": "Warhammer 40k","uniId": "Краски", "forFilter": "Warhammer 40000", "count": "(400)", "id": 15},
       {"name": "Age of Sigmar","uniId": "Краски", "count": "(263)", "id": 16},
       {"name": "Warcry","uniId": "Краски", "count": "(49)", "id": 17},
       {"name": "Necromunda","uniId": "Краски", "count": "(21)", "id": 18},

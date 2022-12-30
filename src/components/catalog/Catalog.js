@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import './catalog.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { catalogFetching, catalogError, fetchCatalog , activeFilter} from './catalogSlice';
+import { fetchCatalog , activeFilter} from './catalogSlice';
 import { finalFilter } from './catalogSlice';
 
 const Catalog = (props) => {
@@ -29,11 +29,16 @@ const Catalog = (props) => {
     {clazz: 'catalog__link start', href:'#', content: 'Товары для детей', id: 6},
     {clazz: 'catalog__link start', last: 'last', href:'#', content: 'Аксессуары для моделизма', id: 7},
   ]
+
    const fetching = loadingOrError === 'loading' ? 'Loading...': null;
    const fail = loadingOrError === 'error' ? 'Error' : null;
-   const content = !(fetching || fail) ? catalog.map(item => {
-    return <div key={item.id}>{item.title}{item.count}{item.name}</div>
-  }) : null
+   const content = !(fetching || fail) ? catalog.filter(item => item.name).map(({id, count, name}) => {
+    return  <div key={id}><a href="#" className="catalog__choicelink">{name} {count}</a></div>
+  }) : null;
+   const title = !(fetching || fail) ? catalog.filter(item => item.title === finalActiveFilter ?  item.title : null).map(title => {
+    return <li className="catalog__titlechoice">{title.title}</li>
+  }) : null;
+
   return(
     <nav className='catalog'>
       <ul className="catalog__category">
@@ -49,13 +54,17 @@ const Catalog = (props) => {
         }
       </ul>
       <ul className="catalog__choice">
+        {title}
+        <li className="catalog__wraplink">
         {content}
         {fetching}
         {fail}
+        </li>
       </ul>
     </nav>
   )
 }
+
 export default Catalog;
 
 
