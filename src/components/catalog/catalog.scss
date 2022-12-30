@@ -72,6 +72,7 @@
     color: #2A2A2A;
   }
   &__choice {
+    position: relative;
     list-style-type: none;
     padding-left: 0;
     li {
@@ -99,4 +100,28 @@
     margin-top: 17px;
     margin-left: 30px;
   }
+  &__loading, &__error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media(max-width: 991px){
+  .catalog {
+    grid-template-columns: 255px 500px;
+    &__wraplink {
+      grid-template-columns: minmax(270px, auto) minmax(170px, auto) ;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-left: 10px;
+    }
+    &__choice {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+}
 }

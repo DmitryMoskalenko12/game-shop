@@ -30,13 +30,13 @@ const Catalog = (props) => {
     {clazz: 'catalog__link start', last: 'last', href:'#', content: 'Аксессуары для моделизма', id: 7},
   ]
 
-   const fetching = loadingOrError === 'loading' ? 'Loading...': null;
-   const fail = loadingOrError === 'error' ? 'Error' : null;
+   const fetching = loadingOrError === 'loading' ? <div className="catalog__loading">Loading...</div>: null;
+   const fail = loadingOrError === 'error' ? <div className="catalog__error">Error</div> : null;
    const content = !(fetching || fail) ? catalog.filter(item => item.name).map(({id, count, name}) => {
     return  <div key={id}><a href="#" className="catalog__choicelink">{name} {count}</a></div>
   }) : null;
    const title = !(fetching || fail) ? catalog.filter(item => item.title === finalActiveFilter ?  item.title : null).map(title => {
-    return <li className="catalog__titlechoice">{title.title}</li>
+    return <li key={title.title} className="catalog__titlechoice">{title.title}</li>
   }) : null;
 
   return(
