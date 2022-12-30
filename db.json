@@ -48,5 +48,12 @@
       {"name": "Куклы","uniId": "Товары для детей", "count": "(49)", "id": 46},
       {"name": "Детская посуда","uniId": "Товары для детей", "count": "(22)", "id": 47},
       {"name": "Дартс","uniId": "Товары для детей", "count": "(4)", "id": 48}
+    ],
+    "carousel":[
+      {"img": "./icons/warhammer.png", "path":"#", "descr":"Warhmmer games","descr2":"Warhammer", "butDescr": "Подробнее", "id": 1},
+      {"img": "./icons/gathering.png", "path":"#", "descr":"Самая популярная карточная игра", "descr2":"Magic: the Gathering", "butDescr": "Подробнее", "id": 2},
+      {"img": "./icons/catalog.png", "path":"#", "descr":"Попробуй игры разных жанров", "descr2":"Весь католог", "butDescr": "Подробнее", "id": 3},
+      {"img": "./icons/tablegame.png", "path":"#", "descr":"Настольные игры", "descr2":"Настольные игры", "butDescr": "Подробнее", "id": 4},
+      {"img": "./icons/paint.png", "path":"#", "descr":"Краски", "descr2":"Краски", "butDescr": "Подробнее", "id": 5}
     ]
   }
