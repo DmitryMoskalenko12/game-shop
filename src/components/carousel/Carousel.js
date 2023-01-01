@@ -1,6 +1,6 @@
 import './carousel.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { buttonTrigger, fetchCarousel, offset, slideIndex, width} from './carouselSlice';
+import { buttonTrigger, fetchCarousel, offset, slideIndex} from './carouselSlice';
 import { useEffect} from 'react';
 import Button from '../UI/button/Button';
 
@@ -55,7 +55,10 @@ const Carousel = () => {
                       <img src={img} alt={descr} />
                     </div>
                     <div className="carousel__descrbutton">
-                      <div className="carousel__descr">{descr}<br />{descr2}</div>
+                      <div className="carousel__wrapdescr">
+                        <div className="carousel__descr">{descr}</div>
+                        <div className="carousel__descr2">{descr2}</div>
+                      </div>
                       <Button className="carousel__button">{butDescr}</Button>
                     </div>
                   </div>
@@ -63,12 +66,8 @@ const Carousel = () => {
          }
         </div>
       </div>
-      <div className="carousel__next">
-        <button onClick={() => next()}>&gt;</button>
-      </div>
-      <div className="carousel__prev">
-        <button onClick={() => prev()}>&lt;</button>
-      </div>
+        <button className="carousel__next" onClick={() => next()}>&gt;</button>
+        <button className="carousel__prev" onClick={() => prev()}></button>
     </div>
 
   )

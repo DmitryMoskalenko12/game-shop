@@ -1,5 +1,6 @@
 .carousel {
   &__window {
+    position: relative;
     overflow: hidden;
   }
   &__field {
@@ -24,5 +25,59 @@
   &__descrbutton {
     position: absolute;
     bottom: 0;
+  }
+  &__descrbutton {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 33px;
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  &__descr2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+  &__prev {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    background: #2A2A2A;
+    &::after {
+      content: url('../../icons/prev.png');
+      position: absolute;
+      top: -1px;
+      left: 5px;
+      color: #FFFFFF;
+    }
+  }
+  &__next {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    text-align: center;
+    background: #2A2A2A;
+    &::after {
+      content: url('../../icons/next.png');
+      position: absolute;
+      top: -1px;
+      left: 7px;
+      color: #FFFFFF;
+    }
   }
 }
