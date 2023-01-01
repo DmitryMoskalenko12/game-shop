@@ -80,13 +80,42 @@
       color: #FFFFFF;
     }
   }
+  &__dots {
+    display: none;
+  }
 }
 
-@media(max-width: 576px){
+@media(max-width: 575px){
   .carousel{
     margin-top: 57px;
     &__slider {
      height: 217px;
+    }
+    &__prev, &__next {
+      display: none;
+    }
+    &__dots {
+      position: absolute;
+      bottom: 9px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+    }
+    &__dot {
+      width: 23px;
+      height: 3px;
+      background: #929292;
+      border-radius: 9px;
+    }
+    &__descrbutton {
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 10px;
+      bottom: 55px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
     }
   }
 } 

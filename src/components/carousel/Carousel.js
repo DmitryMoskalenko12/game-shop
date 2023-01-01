@@ -67,6 +67,16 @@ const Carousel = () => {
          }
         </div>
       </div>
+        <div className="carousel__dots">
+          {
+            sliders.map((item, i) => {
+              return <button key={i} style={{background: slideIndexCarousel === i + 1 ? '#FFFFFF': null}} onClick={() => {
+                dispatch(offset(i * windowWidth));
+                dispatch(slideIndex(i + 1))
+              }} className="carousel__dot"></button>
+            })
+          }
+        </div>
         <button className="carousel__next" onClick={() => next()}></button>
         <button className="carousel__prev" onClick={() => prev()}></button>
     </div>
