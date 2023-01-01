@@ -55,5 +55,6 @@
       {"img": "./image/catalog.png", "path":"#", "descr":"Попробуй игры разных жанров", "descr2":"Весь католог", "butDescr": "Подробнее", "id": 3},
       {"img": "./image/tablegame.png", "path":"#", "descr":"Настольные игры", "descr2":"Настольные игры", "butDescr": "Подробнее", "id": 4},
       {"img": "./image/paint.png", "path":"#", "descr":"Краски", "descr2":"Краски", "butDescr": "Подробнее", "id": 5}
+      
     ]
   }

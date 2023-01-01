@@ -2,6 +2,7 @@ import './carousel.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { buttonTrigger, fetchCarousel, offset, slideIndex, width} from './carouselSlice';
 import { useEffect} from 'react';
+import Button from '../UI/button/Button';
 
 const Carousel = () => {
   const sliders = useSelector(state => state.carousel.data);
@@ -23,7 +24,7 @@ const Carousel = () => {
       dispatch(slideIndex(slideIndexCarousel + 1))
     }
 
-    if (offsetSlider == windowWidth  * (sliders.length - 1)) {
+    if (offsetSlider == windowWidth * (sliders.length - 2)) {
       dispatch(offset(0)) 
     } else {
       dispatch(offset(offsetSlider += windowWidth))
@@ -37,7 +38,7 @@ const Carousel = () => {
     }
     
     if (offsetSlider == 0) {
-      dispatch(offset(offsetSlider = windowWidth * (sliders.length - 1)))
+      dispatch(offset(offsetSlider = windowWidth * (sliders.length - 2)))
     } else {
       dispatch(offset(offsetSlider -= windowWidth))
     }
@@ -55,7 +56,7 @@ const Carousel = () => {
                     </div>
                     <div className="carousel__descrbutton">
                       <div className="carousel__descr">{descr}<br />{descr2}</div>
-                      <div className="carousel__button">{butDescr}</div>
+                      <Button className="carousel__button">{butDescr}</Button>
                     </div>
                   </div>
           })
@@ -63,10 +64,10 @@ const Carousel = () => {
         </div>
       </div>
       <div className="carousel__next">
-        <button onClick={() => next()}>next</button>
+        <button onClick={() => next()}>&gt;</button>
       </div>
       <div className="carousel__prev">
-        <button onClick={() => prev()}>prev</button>
+        <button onClick={() => prev()}>&lt;</button>
       </div>
     </div>
 

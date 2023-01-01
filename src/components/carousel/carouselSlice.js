@@ -7,7 +7,7 @@ const initialState = {
   activeButton: false,
   offset: 0,
   slideIndex: 1,
-  width: 967
+  width: 967 
 }
 
 export const fetchCarousel = createAsyncThunk(
