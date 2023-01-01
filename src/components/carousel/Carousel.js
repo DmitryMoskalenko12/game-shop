@@ -11,7 +11,7 @@ const Carousel = () => {
   const slideIndexCarousel = useSelector(state => state.carousel.slideIndex);
   const windowWidth = useSelector(state => state.carousel.width);
   const staticSlide = useSelector(state => state.carousel.staticSlide);
-  
+
   const dispatch = useDispatch();
   const vhWidth = useRef();
 

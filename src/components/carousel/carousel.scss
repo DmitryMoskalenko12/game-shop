@@ -2,7 +2,7 @@
   &__window {
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
   }
   &__field {
     position: relative;
@@ -10,7 +10,6 @@
   }
   &__slider {
     position: relative;
-    left: 0px; 
     width: 100vw;
     height: 320px;
   }
@@ -18,7 +17,7 @@
     width: 100vw;
     height: 320px;
     img {
-      width: 100%;
+      width: 100vw;
       height: 100%;
       object-fit: cover;
     }
@@ -82,18 +81,12 @@
     }
   }
 }
-@media(max-width: 1200px){
+
+@media(max-width: 576px){
   .carousel{
-    &__field {
-      position: relative;
-      display: flex;
-    }
-}
-}
-@media(max-width: 992px){
-  .carousel{
+    margin-top: 57px;
     &__slider {
-      width: 967px;
+     height: 217px;
     }
   }
-}
+} 
