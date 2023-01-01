@@ -1,7 +1,7 @@
 import './carousel.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { buttonTrigger, fetchCarousel, offset, slideIndex} from './carouselSlice';
-import { useEffect} from 'react';
+import { buttonTrigger, fetchCarousel, offset, slideIndex, width} from './carouselSlice';
+import { useEffect, useRef} from 'react';
 import Button from '../UI/button/Button';
 
 const Carousel = () => {
@@ -10,10 +10,13 @@ const Carousel = () => {
   let offsetSlider = useSelector(state => state.carousel.offset);
   const slideIndexCarousel = useSelector(state => state.carousel.slideIndex);
   const windowWidth = useSelector(state => state.carousel.width);
+  const staticSlide = useSelector(state => state.carousel.staticSlide);
+  
   const dispatch = useDispatch();
- 
+  const vhWidth = useRef();
 
   useEffect(() => {
+    dispatch(width(+(getComputedStyle(vhWidth.current).width).replace(/\D/igm, '')))
     dispatch(fetchCarousel())
   },[])
 
@@ -23,9 +26,8 @@ const Carousel = () => {
     }else {
       dispatch(slideIndex(slideIndexCarousel + 1))
     }
-
-    if (offsetSlider == windowWidth * (sliders.length - 2)) {
-      dispatch(offset(0)) 
+    if (offsetSlider == windowWidth * (sliders.length - staticSlide) ) {
+      dispatch(offset(0))
     } else {
       dispatch(offset(offsetSlider += windowWidth))
     }
@@ -36,9 +38,8 @@ const Carousel = () => {
     }else {
       dispatch(slideIndex(slideIndexCarousel - 1))
     }
-    
     if (offsetSlider == 0) {
-      dispatch(offset(offsetSlider = windowWidth * (sliders.length - 2)))
+      dispatch(offset(offsetSlider = windowWidth * (sliders.length - staticSlide)))
     } else {
       dispatch(offset(offsetSlider -= windowWidth))
     }
@@ -46,8 +47,8 @@ const Carousel = () => {
  
   return(
     <div className='carousel'>
-      <div className="carousel__window">
-        <div style={{width: `${100 * sliders.length + '%'}`, transition: '0.7s all', transform: `translateX(-${offsetSlider}px)`}}  className="carousel__field">
+      <div ref={vhWidth} className="carousel__window">
+        <div style={{width: `${100 * sliders.length + '%'}`,position: 'relative', transition: '0.7s all', transform: `translateX(-${offsetSlider}px)`}}  className="carousel__field">
          {
           sliders.map(({img, path, descr, descr2, butDescr, id}) => {
             return <div key={id} className="carousel__slider">
@@ -66,7 +67,7 @@ const Carousel = () => {
          }
         </div>
       </div>
-        <button className="carousel__next" onClick={() => next()}>&gt;</button>
+        <button className="carousel__next" onClick={() => next()}></button>
         <button className="carousel__prev" onClick={() => prev()}></button>
     </div>
 
