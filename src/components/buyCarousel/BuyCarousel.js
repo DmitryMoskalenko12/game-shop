@@ -13,7 +13,7 @@ const BuyCarousel = () => {
         <div className="buy-carousel__window">
           <div className="buy-carousel__field">
             <div className="buy-carousel__card">
-
+               <div className="buy-carousel__discount">-15%</div>
               <div className="buy-carousel__wrapimg">
                 <img src={figure} alt="figure" />
               </div>

@@ -102,6 +102,17 @@
       {"img": "./image/paint.png","clazz":"catalog-choice__same", "path":"#", "descr":"Краски", "id": 3},
       {"img": "./image/magic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Magic:the Cathering", "id": 4},
       {"img": "./image/cubic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Весь каталог", "id": 5}
+    ],
+
+    "buyCarousel":[
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 1},
+      {"img": "./image/mars.png", "descr":"На марсе","discount": null, "price": "3657 ua","oldPrice": null, "id": 2},
+      {"img": "./image/horse.png", "descr":"Broken Realms: Horrek's Dreadlance","discount": null, "price": "3657 ua","oldPrice": null, "id": 3},
+      {"img": "./image/figure.png", "descr":"Orks: Ghazghkull Thraka Коллекционный выпуск","discount": null, "price": "3657 ua","oldPrice": null, "id": 4},
+      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 5},
+      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 6},
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 7},
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 8}
     ]
   }
   
