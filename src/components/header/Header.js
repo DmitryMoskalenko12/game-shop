@@ -1,5 +1,5 @@
 import './header.scss';
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 import logo from '../../image/logo.png';
 import lup from '../../icons/lup.png';
 import phone from '../../icons/phone.png';
@@ -24,6 +24,14 @@ const Header = () => {
     {clas: 'header__asideli', href: "#", content: 'О центре'},
     {clas: 'header__asideli', href: "#", content: 'Контакты'}
   ]
+  
+  useEffect(() => {
+  if (burger) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+  },[burger])
 
   const onActive =(e) => {
     setActiveLi(e.currentTarget.textContent)

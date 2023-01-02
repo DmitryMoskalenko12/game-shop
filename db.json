@@ -88,8 +88,8 @@
     ],
 
     "carousel":[
-      {"img": "./image/warhammer.png", "path":"#", "descr":"Warhmmer games","descr2":"Warhammer", "butDescr": "Подробнее", "id": 1},
-      {"img": "./image/gathering.png", "path":"#", "descr":"Самая популярная карточная игра", "descr2":"Magic: the Gathering", "butDescr": "Подробнее", "id": 2},
+      {"img": "./image/gathering.png", "path":"#", "descr":"Самая популярная карточная игра", "descr2":"Magic: the Gathering", "butDescr": "Подробнее", "id": 1},
+      {"img": "./image/warhammer.png", "path":"#", "descr":"Warhmmer games","descr2":"Warhammer", "butDescr": "Подробнее", "id": 2},
       {"img": "./image/catalog.png", "path":"#", "descr":"Попробуй игры разных жанров", "descr2":"Весь католог", "butDescr": "Подробнее", "id": 3},
       {"img": "./image/tablegame.png", "path":"#", "descr":"Настольные игры", "descr2":"Настольные игры", "butDescr": "Подробнее", "id": 4},
       {"img": "./image/paint.png", "path":"#", "descr":"Краски", "descr2":"Краски", "butDescr": "Подробнее", "id": 5}

@@ -9,7 +9,7 @@ const CatalogChoice = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-  dispatch(fetchCatalogChoice())
+    dispatch(fetchCatalogChoice())
   },[])
 
   return(
@@ -23,8 +23,10 @@ const CatalogChoice = () => {
                 <h1 style={{display: catalog ? 'block' : 'none'}} className="catalog-choice__catalog">{catalog}</h1>
                 <div className="catalog-choice__imgwrap">
                   <img src={img} alt={descr} />
+                  <div className="catalog-choice__wraplink">
+                    <a className="catalog-choice__descr" href={path}>{descr}</a>
+                  </div>
                 </div>
-                <a className="catalog-choice__descr" href={path}>{descr}</a>
               </div>
             )
           })
