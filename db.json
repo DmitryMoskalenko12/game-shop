@@ -47,8 +47,46 @@
       {"name": "Машинки","uniId": "Товары для детей", "count": "(4)", "id": 45},
       {"name": "Куклы","uniId": "Товары для детей", "count": "(49)", "id": 46},
       {"name": "Детская посуда","uniId": "Товары для детей", "count": "(22)", "id": 47},
-      {"name": "Дартс","uniId": "Товары для детей", "count": "(4)", "id": 48}
+      {"name": "Дартс","uniId": "Товары для детей", "count": "(4)", "id": 48},
+      {"title": "Magic: the Gathering","uniId": "Magic: the Gathering", "id": 49},
+      {"name": "Game number 1","uniId": "Magic: the Gathering", "count": "(69)", "id": 50},
+      {"name": "Game number 2","uniId": "Magic: the Gathering", "count": "(400)", "id": 51},
+      {"name": "Game number 3","uniId": "Magic: the Gathering", "count": "(263)", "id": 52},
+      {"name": "Game number 4","uniId": "Magic: the Gathering", "count": "(49)", "id": 53},
+      {"name": "Game number 5","uniId": "Magic: the Gathering", "count": "(21)", "id": 54},
+      {"name": "Game number 6","uniId": "Magic: the Gathering", "count": "(16)", "id": 55},
+      {"name": "Game number 7","uniId": "Magic: the Gathering", "count": "(28)", "id": 56},
+      {"name": "Game number 8","uniId": "Magic: the Gathering", "count": "(4)", "id": 57},
+      {"name": "Game number 9","uniId": "Magic: the Gathering", "count": "(49)", "id": 58},
+      {"name": "Game number 10","uniId": "Magic: the Gathering", "count": "(22)", "id": 59},
+      {"name": "Game number 11","uniId": "Magic: the Gathering", "count": "(4)", "id": 60},
+      {"title": "Аксессуары для игр","uniId": "Аксессуары для игр", "id": 61},
+      {"name": "Аксессуар 1","uniId": "Аксессуары для игр", "count": "(69)", "id": 62},
+      {"name": "Аксессуар 2","uniId": "Аксессуары для игр", "count": "(400)", "id": 63},
+      {"name": "Аксессуар 3","uniId": "Аксессуары для игр", "count": "(263)", "id": 64},
+      {"name": "Аксессуар 4","uniId": "Аксессуары для игр", "count": "(49)", "id": 65},
+      {"name": "Аксессуар 5","uniId": "Аксессуары для игр", "count": "(21)", "id": 66},
+      {"name": "Аксессуар 6","uniId": "Аксессуары для игр", "count": "(16)", "id": 67},
+      {"name": "Аксессуар 7","uniId": "Аксессуары для игр", "count": "(28)", "id": 68},
+      {"name": "Аксессуар 8","uniId": "Аксессуары для игр", "count": "(4)", "id": 69},
+      {"name": "Аксессуар 9","uniId": "Аксессуары для игр", "count": "(49)", "id": 70},
+      {"name": "Аксессуар 10","uniId": "Аксессуары для игр", "count": "(22)", "id": 71},
+      {"name": "Аксессуар 11","uniId": "Аксессуары для игр", "count": "(4)", "id": 72},
+      {"title": "Аксессуары для моделизма","uniId": "Аксессуары для моделизма", "id": 73},
+      {"name": "Аксессуар 1","uniId": "Аксессуары для моделизма", "count": "(69)", "id": 74},
+      {"name": "Аксессуар 2","uniId": "Аксессуары для моделизма", "count": "(400)", "id": 75},
+      {"name": "Аксессуар 3","uniId": "Аксессуары для моделизма", "count": "(263)", "id": 76},
+      {"name": "Аксессуар 4","uniId": "Аксессуары для моделизма", "count": "(49)", "id": 77},
+      {"name": "Аксессуар 5","uniId": "Аксессуары для моделизма", "count": "(21)", "id": 78},
+      {"name": "Аксессуар 6","uniId": "Аксессуары для моделизма", "count": "(16)", "id": 79},
+      {"name": "Аксессуар 7","uniId": "Аксессуары для моделизма", "count": "(28)", "id": 80},
+      {"name": "Аксессуар 8","uniId": "Аксессуары для моделизма", "count": "(4)", "id": 81},
+      {"name": "Аксессуар 9","uniId": "Аксессуары для моделизма", "count": "(49)", "id": 82},
+      {"name": "Аксессуар 10","uniId": "Аксессуары для моделизма", "count": "(22)", "id": 83},
+      {"name": "Аксессуар 11","uniId": "Аксессуары для моделизма", "count": "(4)", "id": 84}
+      
     ],
+
     "carousel":[
       {"img": "./image/warhammer.png", "path":"#", "descr":"Warhmmer games","descr2":"Warhammer", "butDescr": "Подробнее", "id": 1},
       {"img": "./image/gathering.png", "path":"#", "descr":"Самая популярная карточная игра", "descr2":"Magic: the Gathering", "butDescr": "Подробнее", "id": 2},
@@ -56,5 +94,14 @@
       {"img": "./image/tablegame.png", "path":"#", "descr":"Настольные игры", "descr2":"Настольные игры", "butDescr": "Подробнее", "id": 4},
       {"img": "./image/paint.png", "path":"#", "descr":"Краски", "descr2":"Краски", "butDescr": "Подробнее", "id": 5}
       
+    ],
+
+    "catalogChoice":[
+      {"img": "./image/tablegame.png","clazz":"catalog-choice__game", "path":"#", "catalog":"Каталог", "descr":"Настольные игры", "id": 1},
+      {"img": "./image/warhammer.png","clazz":"catalog-choice__same", "path":"#", "descr":"Варгеймы", "id": 2},
+      {"img": "./image/paint.png","clazz":"catalog-choice__same", "path":"#", "descr":"Краски", "id": 3},
+      {"img": "./image/magic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Magic:the Cathering", "id": 4},
+      {"img": "./image/cubic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Весь каталог", "id": 5}
     ]
   }
+  
