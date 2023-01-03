@@ -3,19 +3,32 @@ import useHttp from "../../hooks/http.hook";
 
 const initialState = {
   data: [],
-  status: 'idle'
+  status: 'idle',
+  slideIndex: 1,
+  offset: 0,
+  width: 0
 }
-const fetchBuyCarousel = createAsyncThunk(
+export const fetchBuyCarousel = createAsyncThunk(
   'buyCarousel/fetchBuyCarousel',
   () => {
-   const {request} = useHttp;
+   const {request} = useHttp();
    return request('http://localhost:3001/buyCarousel')
   }
 )
 const buyCarouselSlice = createSlice({
   name: 'buyCarousel',
   initialState,
-  reducers: {},
+  reducers: {
+    width: (state, action) => {
+     state.width = action.payload
+    },
+    slideIndex: (state, action) => {
+      state.slideIndex = action.payload
+    },
+    offset: (state, action) => {
+      state.offset = action.payload
+    }
+  },
   extraReducers: builder => {
     builder
     .addCase(fetchBuyCarousel.pending, state => {
@@ -33,4 +46,5 @@ const buyCarouselSlice = createSlice({
 
 })
 const {actions, reducer} = buyCarouselSlice;
+export const {slideIndex, offset, width} = actions;
 export default reducer;
