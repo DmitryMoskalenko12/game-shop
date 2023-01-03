@@ -22,16 +22,16 @@ const BuyCarousel = () => {
  
   useEffect(() => {
     if(window.screen.availWidth <= 1399 && window.screen.availWidth >= 1199){
-    setSlideNumber(7)
+    setSlideNumber(/* 7 */ 4)
     setMarginRight(30)
     } else if (window.screen.availWidth <= 1199 && window.screen.availWidth >= 991) {
-    setSlideNumber(6)
+    setSlideNumber(/* 6 */ 3)
     setMarginRight(8)
    } else if (window.screen.availWidth <= 991 && window.screen.availWidth >= 767) {
-    setSlideNumber(5)
+    setSlideNumber(/* 5 */ 2)
     setMarginRight(21)
    } else if(window.screen.availWidth <= 767 && window.screen.availWidth >= 575) {
-    setSlideNumber(5)
+    setSlideNumber(/* 5 */ 2)
     setMarginRight(2)
    } else if (window.screen.availWidth <= 575) {
     setSlideNumber(1)
@@ -45,7 +45,7 @@ const BuyCarousel = () => {
     }else {
       dispatch(slideIndex(slideIndexCarousel + 1))
     }
-    if (offsetCarousel == (+windowWidthResult + +marginRight) * (buyCards.length - slideNumber) ) {
+    if (offsetCarousel == (+windowWidthResult + +marginRight) * (buyCards.length / slideNumber === buyCards.length ? buyCards.length - 1 : Math.ceil(buyCards.length / slideNumber - 1)) ) {
       dispatch(offset(0))
     } else {
       dispatch(offset(offsetCarousel += (+windowWidthResult + +marginRight)))
@@ -59,7 +59,7 @@ const BuyCarousel = () => {
       dispatch(slideIndex(slideIndexCarousel - 1))
     }
     if (offsetCarousel == 0) {
-      dispatch(offset(offsetCarousel = (+windowWidthResult + +marginRight) * (buyCards.length - slideNumber)))
+      dispatch(offset(offsetCarousel = (+windowWidthResult + +marginRight) * (buyCards.length / slideNumber === buyCards.length ? buyCards.length - 1 : Math.ceil(buyCards.length / slideNumber - 1)) ))
     } else {
       dispatch(offset(offsetCarousel -= (+windowWidthResult + +marginRight)))
     }
@@ -83,7 +83,6 @@ const BuyCarousel = () => {
               buyCards.map(({img, descr, price, id}) => {
                 return(
                       <div key={id} className="buy-carousel__card">
-                      {/* <div className="buy-carousel__discount">-15%</div> */}
                       <div className="buy-carousel__wrapimg">
                         <img src={img} alt={descr} />
                       </div>
@@ -110,7 +109,6 @@ const BuyCarousel = () => {
                   <div className="buy-carousel__descr">{descr}</div>
 
                   <div className="buy-carousel__price">
-                  {/*  <div className="buy-carousel__oldprice">4350 ua</div> */}
                     <div className="buy-carousel__newprice">{price}</div>
                   </div>
 

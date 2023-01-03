@@ -112,7 +112,26 @@
       {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 5},
       {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 6},
       {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 7},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 8}
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 8},
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 9},
+      {"img": "./image/mars.png", "descr":"На марсе","discount": null, "price": "3657 ua","oldPrice": null, "id": 10},
+      {"img": "./image/horse.png", "descr":"Broken Realms: Horrek's Dreadlance","discount": null, "price": "3657 ua","oldPrice": null, "id": 11},
+      {"img": "./image/figure.png", "descr":"Orks: Ghazghkull Thraka Коллекционный выпуск","discount": null, "price": "3657 ua","oldPrice": null, "id": 12},
+      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 13},
+      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 14},
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 15},
+      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 16}
+    ],
+
+    "offerCarousel":[
+      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 1},
+      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 2},
+      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 3},
+      {"img": "./image/galaxy.png", "descr":"Звездные войны. Внешнее кольцо","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 4},
+      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 5},
+      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 6},
+      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 7},
+      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 8}
     ]
   }
   
