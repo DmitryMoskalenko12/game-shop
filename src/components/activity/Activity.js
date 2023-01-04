@@ -51,9 +51,7 @@ const Activity = () => {
             })
           }
         </div>
-        <Button onClick = {() => {
-          dispatch(page(pageActivity + 1));
-          }} style = {{width:'317px', height:'71px', display: activityData.length === baseLength.length ? 'none' : 'block', margin: '0 auto',marginTop: '38px'}}>Показать еще</Button>
+        <button className='activity__button' onClick = {() => {dispatch(page(pageActivity + 1))}} style = {{display: activityData.length === baseLength.length ? 'none' : 'block'}}>Показать еще</button>
       </div>
     </section>
   )
