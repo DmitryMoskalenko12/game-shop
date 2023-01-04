@@ -27,7 +27,7 @@ const Activity = () => {
   return(
     <section className='activity'>
       <div className="container">
-        <h1 className="activity__title">Ближайшие мероприятия</h1>
+       <h1 className="activity__title">Ближайшие мероприятия</h1>
         <div className="activity__wrap">
           {
             activityData.map(({img, descr1,path, date, descr2, id}) => {

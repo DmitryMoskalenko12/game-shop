@@ -5,8 +5,8 @@
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 37px;
     color: #363636;
+    text-align: center;
   }
   &__wrap {
     display: grid;
@@ -64,5 +64,19 @@
     margin-left: 28px;
     margin-top: 11px;
     margin-bottom: 22px;
+  }
+}
+@media(max-width: 1399px){
+  .activity {
+    &__wrap {
+      grid-template-columns: repeat(2, 538px);
+    }
+  }
+}
+@media(max-width: 1199px){
+  .activity {
+    &__wrap {
+      grid-template-columns: repeat(2, 460px);
+    }
   }
 }
