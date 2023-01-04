@@ -5,6 +5,7 @@ import Carousel from '../carousel/Carousel';
 import CatalogChoice from '../catalogChoice/CatalogChoice';
 import BuyCarousel from '../buyCarousel/BuyCarousel';
 import OfferCarousel from '../offerCarousel/OfferCarousel';
+import Activity from '../activity/Activity';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <CatalogChoice/>
     <BuyCarousel/>
     <OfferCarousel/>
+    <Activity/>
     </>
   );
 }

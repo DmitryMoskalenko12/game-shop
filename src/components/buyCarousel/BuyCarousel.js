@@ -24,7 +24,7 @@ const BuyCarousel = () => {
     if(window.screen.availWidth <= 1399 && window.screen.availWidth >= 1199){
     setSlideNumber(/* 7 */ 4)
     setMarginRight(30)
-    } else if (window.screen.availWidth <= 1199 && window.screen.availWidth >= 991) {
+   } else if (window.screen.availWidth <= 1199 && window.screen.availWidth >= 991) {
     setSlideNumber(/* 6 */ 3)
     setMarginRight(8)
    } else if (window.screen.availWidth <= 991 && window.screen.availWidth >= 767) {

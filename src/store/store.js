@@ -4,6 +4,7 @@ import carousel from '../components/carousel/carouselSlice';
 import catalogChoice from '../components/catalogChoice/catalogChoiceSlice';
 import buyCarousel from '../components/buyCarousel/buyCarouselSlice';
 import offerCarousel from '../components/offerCarousel/offerCarouselSlice';
+import activity from '../components/activity/ActivitySlice';
 
 const stringMiddleware = () => (next) => (action) =>{
   if (typeof action === 'string') {
@@ -15,7 +16,7 @@ const stringMiddleware = () => (next) => (action) =>{
  }
 
 const store = configureStore({
-  reducer:{catalog, carousel, catalogChoice, buyCarousel, offerCarousel},
+  reducer:{catalog, carousel, catalogChoice, buyCarousel, offerCarousel, activity},
   middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware),
   devTools: process.env.NODE_ENV !== 'production',
 })
