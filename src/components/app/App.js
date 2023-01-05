@@ -8,6 +8,7 @@ import OfferCarousel from '../offerCarousel/OfferCarousel';
 import Activity from '../activity/Activity';
 import MoreInteres from '../moreInteres/MoreInteres';
 import About from '../about/About';
+import Contacts from '../contacts/Contacts';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Activity/>
     <MoreInteres/>
     <About/>
+    <Contacts/>
     </>
   );
 }

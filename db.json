@@ -1,157 +1,1078 @@
 {
-    "warhammer": [
-      {"title": "Warhammer 40000", "uniId": "Warhammer 40000", "id": 1},
-      {"name": "Альтернативные миниатюры","uniId": "Warhammer 40000", "count": "(69)", "id": 2},
-      {"name": "Warhammer 40k","uniId": "Warhammer 40000", "count": "(400)", "id": 3},
-      {"name": "Age of Sigmar","uniId": "Warhammer 40000", "count": "(263)", "id": 4},
-      {"name": "Warcry","uniId": "Warhammer 40000", "count": "(49)", "id": 5},
-      {"name": "Necromunda","uniId": "Warhammer 40000", "count": "(21)", "id": 6},
-      {"name": "Lord of the Rings","uniId": "Warhammer 40000", "count": "(16)", "id": 7},
-      {"name": "Blood Bowl","uniId": "Warhammer 40000", "count": "(28)", "id": 8},
-      {"name": "Titanicus","uniId": "Warhammer 40000", "count": "(4)", "id": 9},
-      {"name": "Warcry","uniId": "Warhammer 40000", "count": "(49)", "id": 10},
-      {"name": "Warhammer: Underworlds","uniId": "Warhammer 40000", "count": "(22)", "id": 11},
-      {"name": "Kiltem","uniId": "Warhammer 40000", "count": "(4)", "id": 12},
-      {"title": "Краски","uniId": "Краски", "id": 13},
-      {"name": "Синие краски","uniId": "Краски", "count": "(69)", "id": 14},
-      {"name": "Желтые краски","uniId": "Краски",  "count": "(400)", "id": 15},
-      {"name": "Зеленые краски","uniId": "Краски", "count": "(263)", "id": 16},
-      {"name": "Фиолетовые краски","uniId": "Краски", "count": "(49)", "id": 17},
-      {"name": "Черные краски","uniId": "Краски", "count": "(21)", "id": 18},
-      {"name": "Разноцветные краски","uniId": "Краски", "count": "(16)", "id": 19},
-      {"name": "Коричневые краски","uniId": "Краски", "count": "(28)", "id": 20},
-      {"name": "Золотистые краски","uniId": "Краски", "count": "(4)", "id": 21},
-      {"name": "Красные краски","uniId": "Краски", "count": "(49)", "id": 22},
-      {"name": "Бирюзовые краски","uniId": "Краски", "count": "(22)", "id": 23},
-      {"name": "Кораловые краски","uniId": "Краски", "count": "(4)", "id": 24},
-      {"title": "Настольные игры","uniId": "Настольные игры", "id": 25},
-      {"name": "Синие краски","uniId": "Настольные игры", "count": "(69)", "id": 26},
-      {"name": "Желтые краски","uniId": "Настольные игры", "count": "(400)", "id": 27},
-      {"name": "Зеленые краски","uniId": "Настольные игры", "count": "(263)", "id": 28},
-      {"name": "Фиолетовые краски","uniId": "Настольные игры", "count": "(49)", "id": 29},
-      {"name": "Черные краски","uniId": "Настольные игры", "count": "(21)", "id": 30},
-      {"name": "Разноцветные краски","uniId": "Настольные игры", "count": "(16)", "id": 31},
-      {"name": "Коричневые краски","uniId": "Настольные игры", "count": "(28)", "id": 32},
-      {"name": "Золотистые краски","uniId": "Настольные игры", "count": "(4)", "id": 33},
-      {"name": "Красные краски","uniId": "Настольные игры", "count": "(49)", "id": 34},
-      {"name": "Бирюзовые краски","uniId": "Настольные игры", "count": "(22)", "id": 35},
-      {"name": "Кораловые краски","uniId": "Настольные игры", "count": "(4)", "id": 36},
-      {"title": "Товары для детей","uniId": "Товары для детей", "id": 37},
-      {"name": "Мягкие игрушки","uniId": "Товары для детей", "count": "(69)", "id": 38},
-      {"name": "Резиновые игрушки","uniId": "Товары для детей", "count": "(400)", "id": 39},
-      {"name": "Деревяные игрушки","uniId": "Товары для детей", "count": "(263)", "id": 40},
-      {"name": "Китайские игрушки","uniId": "Товары для детей", "count": "(49)", "id": 41},
-      {"name": "Американские игрушки","uniId": "Товары для детей", "count": "(21)", "id": 42},
-      {"name": "Кубики","uniId": "Товары для детей", "count": "(16)", "id": 43},
-      {"name": "Конструкторы","uniId": "Товары для детей", "count": "(28)", "id": 44},
-      {"name": "Машинки","uniId": "Товары для детей", "count": "(4)", "id": 45},
-      {"name": "Куклы","uniId": "Товары для детей", "count": "(49)", "id": 46},
-      {"name": "Детская посуда","uniId": "Товары для детей", "count": "(22)", "id": 47},
-      {"name": "Дартс","uniId": "Товары для детей", "count": "(4)", "id": 48},
-      {"title": "Magic: the Gathering","uniId": "Magic: the Gathering", "id": 49},
-      {"name": "Game number 1","uniId": "Magic: the Gathering", "count": "(69)", "id": 50},
-      {"name": "Game number 2","uniId": "Magic: the Gathering", "count": "(400)", "id": 51},
-      {"name": "Game number 3","uniId": "Magic: the Gathering", "count": "(263)", "id": 52},
-      {"name": "Game number 4","uniId": "Magic: the Gathering", "count": "(49)", "id": 53},
-      {"name": "Game number 5","uniId": "Magic: the Gathering", "count": "(21)", "id": 54},
-      {"name": "Game number 6","uniId": "Magic: the Gathering", "count": "(16)", "id": 55},
-      {"name": "Game number 7","uniId": "Magic: the Gathering", "count": "(28)", "id": 56},
-      {"name": "Game number 8","uniId": "Magic: the Gathering", "count": "(4)", "id": 57},
-      {"name": "Game number 9","uniId": "Magic: the Gathering", "count": "(49)", "id": 58},
-      {"name": "Game number 10","uniId": "Magic: the Gathering", "count": "(22)", "id": 59},
-      {"name": "Game number 11","uniId": "Magic: the Gathering", "count": "(4)", "id": 60},
-      {"title": "Аксессуары для игр","uniId": "Аксессуары для игр", "id": 61},
-      {"name": "Аксессуар 1","uniId": "Аксессуары для игр", "count": "(69)", "id": 62},
-      {"name": "Аксессуар 2","uniId": "Аксессуары для игр", "count": "(400)", "id": 63},
-      {"name": "Аксессуар 3","uniId": "Аксессуары для игр", "count": "(263)", "id": 64},
-      {"name": "Аксессуар 4","uniId": "Аксессуары для игр", "count": "(49)", "id": 65},
-      {"name": "Аксессуар 5","uniId": "Аксессуары для игр", "count": "(21)", "id": 66},
-      {"name": "Аксессуар 6","uniId": "Аксессуары для игр", "count": "(16)", "id": 67},
-      {"name": "Аксессуар 7","uniId": "Аксессуары для игр", "count": "(28)", "id": 68},
-      {"name": "Аксессуар 8","uniId": "Аксессуары для игр", "count": "(4)", "id": 69},
-      {"name": "Аксессуар 9","uniId": "Аксессуары для игр", "count": "(49)", "id": 70},
-      {"name": "Аксессуар 10","uniId": "Аксессуары для игр", "count": "(22)", "id": 71},
-      {"name": "Аксессуар 11","uniId": "Аксессуары для игр", "count": "(4)", "id": 72},
-      {"title": "Аксессуары для моделизма","uniId": "Аксессуары для моделизма", "id": 73},
-      {"name": "Аксессуар 1","uniId": "Аксессуары для моделизма", "count": "(69)", "id": 74},
-      {"name": "Аксессуар 2","uniId": "Аксессуары для моделизма", "count": "(400)", "id": 75},
-      {"name": "Аксессуар 3","uniId": "Аксессуары для моделизма", "count": "(263)", "id": 76},
-      {"name": "Аксессуар 4","uniId": "Аксессуары для моделизма", "count": "(49)", "id": 77},
-      {"name": "Аксессуар 5","uniId": "Аксессуары для моделизма", "count": "(21)", "id": 78},
-      {"name": "Аксессуар 6","uniId": "Аксессуары для моделизма", "count": "(16)", "id": 79},
-      {"name": "Аксессуар 7","uniId": "Аксессуары для моделизма", "count": "(28)", "id": 80},
-      {"name": "Аксессуар 8","uniId": "Аксессуары для моделизма", "count": "(4)", "id": 81},
-      {"name": "Аксессуар 9","uniId": "Аксессуары для моделизма", "count": "(49)", "id": 82},
-      {"name": "Аксессуар 10","uniId": "Аксессуары для моделизма", "count": "(22)", "id": 83},
-      {"name": "Аксессуар 11","uniId": "Аксессуары для моделизма", "count": "(4)", "id": 84}
-      
-    ],
-
-    "carousel":[
-      {"img": "./image/gathering.png", "path":"#", "descr":"Самая популярная карточная игра", "descr2":"Magic: the Gathering", "butDescr": "Подробнее", "id": 1},
-      {"img": "./image/warhammer.png", "path":"#", "descr":"Warhmmer games","descr2":"Warhammer", "butDescr": "Подробнее", "id": 2},
-      {"img": "./image/catalog.png", "path":"#", "descr":"Попробуй игры разных жанров", "descr2":"Весь католог", "butDescr": "Подробнее", "id": 3},
-      {"img": "./image/tablegame.png", "path":"#", "descr":"Настольные игры", "descr2":"Настольные игры", "butDescr": "Подробнее", "id": 4},
-      {"img": "./image/paint.png", "path":"#", "descr":"Краски", "descr2":"Краски", "butDescr": "Подробнее", "id": 5}
-      
-    ],
-
-    "catalogChoice":[
-      {"img": "./image/tablegame.png","clazz":"catalog-choice__game", "path":"#", "catalog":"Каталог", "descr":"Настольные игры", "id": 1},
-      {"img": "./image/warhammer.png","clazz":"catalog-choice__same", "path":"#", "descr":"Варгеймы", "id": 2},
-      {"img": "./image/paint.png","clazz":"catalog-choice__same", "path":"#", "descr":"Краски", "id": 3},
-      {"img": "./image/magic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Magic:the Cathering", "id": 4},
-      {"img": "./image/cubic.png","clazz":"catalog-choice__same", "path":"#", "descr":"Весь каталог", "id": 5}
-    ],
-
-    "buyCarousel":[
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 1},
-      {"img": "./image/mars.png", "descr":"На марсе","discount": null, "price": "3657 ua","oldPrice": null, "id": 2},
-      {"img": "./image/horse.png", "descr":"Broken Realms: Horrek's Dreadlance","discount": null, "price": "3657 ua","oldPrice": null, "id": 3},
-      {"img": "./image/figure.png", "descr":"Orks: Ghazghkull Thraka Коллекционный выпуск","discount": null, "price": "3657 ua","oldPrice": null, "id": 4},
-      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 5},
-      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 6},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 7},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 8},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 9},
-      {"img": "./image/mars.png", "descr":"На марсе","discount": null, "price": "3657 ua","oldPrice": null, "id": 10},
-      {"img": "./image/horse.png", "descr":"Broken Realms: Horrek's Dreadlance","discount": null, "price": "3657 ua","oldPrice": null, "id": 11},
-      {"img": "./image/figure.png", "descr":"Orks: Ghazghkull Thraka Коллекционный выпуск","discount": null, "price": "3657 ua","oldPrice": null, "id": 12},
-      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 13},
-      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 14},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 15},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 16},
-      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": null, "price": "3657 ua","oldPrice": null, "id": 17},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 18},
-      {"img": "./image/figure.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": null, "price": "3657 ua","oldPrice": null, "id": 19}
-    ],
-
-    "offerCarousel":[
-      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 1},
-      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 2},
-      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 3},
-      {"img": "./image/galaxy.png", "descr":"Звездные войны. Внешнее кольцо","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 4},
-      {"img": "./image/teatr.png", "descr":"Таверна Красный дракон","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 5},
-      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 6},
-      {"img": "./image/galaxy.png", "descr":"Warhammer 40,000:Chaos Space Marines","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 7},
-      {"img": "./image/girl.png", "descr":"Гравити Фолз: Спасти Пухлю","discount": "15%", "price": "3657 ua","oldPrice": "4350 ua", "id": 8}
-    ],
-
-    "activity": [
-      {"img": "./image/scary.png", "descr1": "Halloween c GoldFish", "date": "31 октября 2021 г. 19:00", "descr2": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..", "path":"#", "id": 1},
-      {"img": "./image/war.png", "descr1": "Турнир Warhammer", "date": "9 ноября 2021 г. 18:30", "descr2": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!", "path":"#", "id": 2},
-      {"img": "./image/magic.png", "descr1": "Турнир Волшебников", "date": "8 ноября 2021 г. 14:30", "descr2": "Готов сразиться в ожесточенной битве магов? Нет? Мы тебя обязтально научим!", "path":"#", "id": 3},
-      {"img": "./image/gathering.png", "descr1": "Турнир Экстрималов", "date": "8 июня 2021 г. 14:30", "descr2": "Готов сразиться в ожесточенной битве? Нет? Мы тебя обязтально научим!", "path":"#", "id": 4},
-      {"img": "./image/scary.png", "descr1": "Halloween c GoldFish", "date": "31 октября 2021 г. 19:00", "descr2": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..", "path":"#", "id": 5},
-      {"img": "./image/war.png", "descr1": "Турнир Warhammer", "date": "9 ноября 2021 г. 18:30", "descr2": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!", "path":"#", "id": 6},
-      {"img": "./image/magic.png", "descr1": "Турнир Волшебников", "date": "8 ноября 2021 г. 14:30", "descr2": "Готов сразиться в ожесточенной битве магов? Нет? Мы тебя обязтально научим!", "path":"#", "id": 7},
-      {"img": "./image/gathering.png", "descr1": "Турнир Экстрималов", "date": "8 июня 2021 г. 14:30", "descr2": "Готов сразиться в ожесточенной битве? Нет? Мы тебя обязтально научим!", "path":"#", "id": 8}
-    ],
-
-    "moreInteres":[
-      {"img": "./image/dark.png", "descr1": "Аэронавтика Империалис: введение в игру", "descr2": "Детально ознакомимся с правилами игры ", "id": 1},
-      {"img": "./image/fire.png", "descr1": "Лучшие настолки в Steam для игры с друзьми на карантине", "descr2": "По рейтингу 2021", "id": 2},
-      {"img": "./image/light.png", "descr1": "Желанные, но маловероятные релизы ", "descr2": "Небольшой список «а вот бы...»", "id": 3}
-    ]
-  }
-  
+  "warhammer": [
+    {
+      "title": "Warhammer 40000",
+      "uniId": "Warhammer 40000",
+      "id": 1
+    },
+    {
+      "name": "Альтернативные миниатюры",
+      "uniId": "Warhammer 40000",
+      "count": "(69)",
+      "id": 2
+    },
+    {
+      "name": "Warhammer 40k",
+      "uniId": "Warhammer 40000",
+      "count": "(400)",
+      "id": 3
+    },
+    {
+      "name": "Age of Sigmar",
+      "uniId": "Warhammer 40000",
+      "count": "(263)",
+      "id": 4
+    },
+    {
+      "name": "Warcry",
+      "uniId": "Warhammer 40000",
+      "count": "(49)",
+      "id": 5
+    },
+    {
+      "name": "Necromunda",
+      "uniId": "Warhammer 40000",
+      "count": "(21)",
+      "id": 6
+    },
+    {
+      "name": "Lord of the Rings",
+      "uniId": "Warhammer 40000",
+      "count": "(16)",
+      "id": 7
+    },
+    {
+      "name": "Blood Bowl",
+      "uniId": "Warhammer 40000",
+      "count": "(28)",
+      "id": 8
+    },
+    {
+      "name": "Titanicus",
+      "uniId": "Warhammer 40000",
+      "count": "(4)",
+      "id": 9
+    },
+    {
+      "name": "Warcry",
+      "uniId": "Warhammer 40000",
+      "count": "(49)",
+      "id": 10
+    },
+    {
+      "name": "Warhammer: Underworlds",
+      "uniId": "Warhammer 40000",
+      "count": "(22)",
+      "id": 11
+    },
+    {
+      "name": "Kiltem",
+      "uniId": "Warhammer 40000",
+      "count": "(4)",
+      "id": 12
+    },
+    {
+      "title": "Краски",
+      "uniId": "Краски",
+      "id": 13
+    },
+    {
+      "name": "Синие краски",
+      "uniId": "Краски",
+      "count": "(69)",
+      "id": 14
+    },
+    {
+      "name": "Желтые краски",
+      "uniId": "Краски",
+      "count": "(400)",
+      "id": 15
+    },
+    {
+      "name": "Зеленые краски",
+      "uniId": "Краски",
+      "count": "(263)",
+      "id": 16
+    },
+    {
+      "name": "Фиолетовые краски",
+      "uniId": "Краски",
+      "count": "(49)",
+      "id": 17
+    },
+    {
+      "name": "Черные краски",
+      "uniId": "Краски",
+      "count": "(21)",
+      "id": 18
+    },
+    {
+      "name": "Разноцветные краски",
+      "uniId": "Краски",
+      "count": "(16)",
+      "id": 19
+    },
+    {
+      "name": "Коричневые краски",
+      "uniId": "Краски",
+      "count": "(28)",
+      "id": 20
+    },
+    {
+      "name": "Золотистые краски",
+      "uniId": "Краски",
+      "count": "(4)",
+      "id": 21
+    },
+    {
+      "name": "Красные краски",
+      "uniId": "Краски",
+      "count": "(49)",
+      "id": 22
+    },
+    {
+      "name": "Бирюзовые краски",
+      "uniId": "Краски",
+      "count": "(22)",
+      "id": 23
+    },
+    {
+      "name": "Кораловые краски",
+      "uniId": "Краски",
+      "count": "(4)",
+      "id": 24
+    },
+    {
+      "title": "Настольные игры",
+      "uniId": "Настольные игры",
+      "id": 25
+    },
+    {
+      "name": "Синие краски",
+      "uniId": "Настольные игры",
+      "count": "(69)",
+      "id": 26
+    },
+    {
+      "name": "Желтые краски",
+      "uniId": "Настольные игры",
+      "count": "(400)",
+      "id": 27
+    },
+    {
+      "name": "Зеленые краски",
+      "uniId": "Настольные игры",
+      "count": "(263)",
+      "id": 28
+    },
+    {
+      "name": "Фиолетовые краски",
+      "uniId": "Настольные игры",
+      "count": "(49)",
+      "id": 29
+    },
+    {
+      "name": "Черные краски",
+      "uniId": "Настольные игры",
+      "count": "(21)",
+      "id": 30
+    },
+    {
+      "name": "Разноцветные краски",
+      "uniId": "Настольные игры",
+      "count": "(16)",
+      "id": 31
+    },
+    {
+      "name": "Коричневые краски",
+      "uniId": "Настольные игры",
+      "count": "(28)",
+      "id": 32
+    },
+    {
+      "name": "Золотистые краски",
+      "uniId": "Настольные игры",
+      "count": "(4)",
+      "id": 33
+    },
+    {
+      "name": "Красные краски",
+      "uniId": "Настольные игры",
+      "count": "(49)",
+      "id": 34
+    },
+    {
+      "name": "Бирюзовые краски",
+      "uniId": "Настольные игры",
+      "count": "(22)",
+      "id": 35
+    },
+    {
+      "name": "Кораловые краски",
+      "uniId": "Настольные игры",
+      "count": "(4)",
+      "id": 36
+    },
+    {
+      "title": "Товары для детей",
+      "uniId": "Товары для детей",
+      "id": 37
+    },
+    {
+      "name": "Мягкие игрушки",
+      "uniId": "Товары для детей",
+      "count": "(69)",
+      "id": 38
+    },
+    {
+      "name": "Резиновые игрушки",
+      "uniId": "Товары для детей",
+      "count": "(400)",
+      "id": 39
+    },
+    {
+      "name": "Деревяные игрушки",
+      "uniId": "Товары для детей",
+      "count": "(263)",
+      "id": 40
+    },
+    {
+      "name": "Китайские игрушки",
+      "uniId": "Товары для детей",
+      "count": "(49)",
+      "id": 41
+    },
+    {
+      "name": "Американские игрушки",
+      "uniId": "Товары для детей",
+      "count": "(21)",
+      "id": 42
+    },
+    {
+      "name": "Кубики",
+      "uniId": "Товары для детей",
+      "count": "(16)",
+      "id": 43
+    },
+    {
+      "name": "Конструкторы",
+      "uniId": "Товары для детей",
+      "count": "(28)",
+      "id": 44
+    },
+    {
+      "name": "Машинки",
+      "uniId": "Товары для детей",
+      "count": "(4)",
+      "id": 45
+    },
+    {
+      "name": "Куклы",
+      "uniId": "Товары для детей",
+      "count": "(49)",
+      "id": 46
+    },
+    {
+      "name": "Детская посуда",
+      "uniId": "Товары для детей",
+      "count": "(22)",
+      "id": 47
+    },
+    {
+      "name": "Дартс",
+      "uniId": "Товары для детей",
+      "count": "(4)",
+      "id": 48
+    },
+    {
+      "title": "Magic: the Gathering",
+      "uniId": "Magic: the Gathering",
+      "id": 49
+    },
+    {
+      "name": "Game number 1",
+      "uniId": "Magic: the Gathering",
+      "count": "(69)",
+      "id": 50
+    },
+    {
+      "name": "Game number 2",
+      "uniId": "Magic: the Gathering",
+      "count": "(400)",
+      "id": 51
+    },
+    {
+      "name": "Game number 3",
+      "uniId": "Magic: the Gathering",
+      "count": "(263)",
+      "id": 52
+    },
+    {
+      "name": "Game number 4",
+      "uniId": "Magic: the Gathering",
+      "count": "(49)",
+      "id": 53
+    },
+    {
+      "name": "Game number 5",
+      "uniId": "Magic: the Gathering",
+      "count": "(21)",
+      "id": 54
+    },
+    {
+      "name": "Game number 6",
+      "uniId": "Magic: the Gathering",
+      "count": "(16)",
+      "id": 55
+    },
+    {
+      "name": "Game number 7",
+      "uniId": "Magic: the Gathering",
+      "count": "(28)",
+      "id": 56
+    },
+    {
+      "name": "Game number 8",
+      "uniId": "Magic: the Gathering",
+      "count": "(4)",
+      "id": 57
+    },
+    {
+      "name": "Game number 9",
+      "uniId": "Magic: the Gathering",
+      "count": "(49)",
+      "id": 58
+    },
+    {
+      "name": "Game number 10",
+      "uniId": "Magic: the Gathering",
+      "count": "(22)",
+      "id": 59
+    },
+    {
+      "name": "Game number 11",
+      "uniId": "Magic: the Gathering",
+      "count": "(4)",
+      "id": 60
+    },
+    {
+      "title": "Аксессуары для игр",
+      "uniId": "Аксессуары для игр",
+      "id": 61
+    },
+    {
+      "name": "Аксессуар 1",
+      "uniId": "Аксессуары для игр",
+      "count": "(69)",
+      "id": 62
+    },
+    {
+      "name": "Аксессуар 2",
+      "uniId": "Аксессуары для игр",
+      "count": "(400)",
+      "id": 63
+    },
+    {
+      "name": "Аксессуар 3",
+      "uniId": "Аксессуары для игр",
+      "count": "(263)",
+      "id": 64
+    },
+    {
+      "name": "Аксессуар 4",
+      "uniId": "Аксессуары для игр",
+      "count": "(49)",
+      "id": 65
+    },
+    {
+      "name": "Аксессуар 5",
+      "uniId": "Аксессуары для игр",
+      "count": "(21)",
+      "id": 66
+    },
+    {
+      "name": "Аксессуар 6",
+      "uniId": "Аксессуары для игр",
+      "count": "(16)",
+      "id": 67
+    },
+    {
+      "name": "Аксессуар 7",
+      "uniId": "Аксессуары для игр",
+      "count": "(28)",
+      "id": 68
+    },
+    {
+      "name": "Аксессуар 8",
+      "uniId": "Аксессуары для игр",
+      "count": "(4)",
+      "id": 69
+    },
+    {
+      "name": "Аксессуар 9",
+      "uniId": "Аксессуары для игр",
+      "count": "(49)",
+      "id": 70
+    },
+    {
+      "name": "Аксессуар 10",
+      "uniId": "Аксессуары для игр",
+      "count": "(22)",
+      "id": 71
+    },
+    {
+      "name": "Аксессуар 11",
+      "uniId": "Аксессуары для игр",
+      "count": "(4)",
+      "id": 72
+    },
+    {
+      "title": "Аксессуары для моделизма",
+      "uniId": "Аксессуары для моделизма",
+      "id": 73
+    },
+    {
+      "name": "Аксессуар 1",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(69)",
+      "id": 74
+    },
+    {
+      "name": "Аксессуар 2",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(400)",
+      "id": 75
+    },
+    {
+      "name": "Аксессуар 3",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(263)",
+      "id": 76
+    },
+    {
+      "name": "Аксессуар 4",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(49)",
+      "id": 77
+    },
+    {
+      "name": "Аксессуар 5",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(21)",
+      "id": 78
+    },
+    {
+      "name": "Аксессуар 6",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(16)",
+      "id": 79
+    },
+    {
+      "name": "Аксессуар 7",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(28)",
+      "id": 80
+    },
+    {
+      "name": "Аксессуар 8",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(4)",
+      "id": 81
+    },
+    {
+      "name": "Аксессуар 9",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(49)",
+      "id": 82
+    },
+    {
+      "name": "Аксессуар 10",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(22)",
+      "id": 83
+    },
+    {
+      "name": "Аксессуар 11",
+      "uniId": "Аксессуары для моделизма",
+      "count": "(4)",
+      "id": 84
+    }
+  ],
+  "carousel": [
+    {
+      "img": "./image/gathering.png",
+      "path": "#",
+      "descr": "Самая популярная карточная игра",
+      "descr2": "Magic: the Gathering",
+      "butDescr": "Подробнее",
+      "id": 1
+    },
+    {
+      "img": "./image/warhammer.png",
+      "path": "#",
+      "descr": "Warhmmer games",
+      "descr2": "Warhammer",
+      "butDescr": "Подробнее",
+      "id": 2
+    },
+    {
+      "img": "./image/catalog.png",
+      "path": "#",
+      "descr": "Попробуй игры разных жанров",
+      "descr2": "Весь католог",
+      "butDescr": "Подробнее",
+      "id": 3
+    },
+    {
+      "img": "./image/tablegame.png",
+      "path": "#",
+      "descr": "Настольные игры",
+      "descr2": "Настольные игры",
+      "butDescr": "Подробнее",
+      "id": 4
+    },
+    {
+      "img": "./image/paint.png",
+      "path": "#",
+      "descr": "Краски",
+      "descr2": "Краски",
+      "butDescr": "Подробнее",
+      "id": 5
+    }
+  ],
+  "catalogChoice": [
+    {
+      "img": "./image/tablegame.png",
+      "clazz": "catalog-choice__game",
+      "path": "#",
+      "catalog": "Каталог",
+      "descr": "Настольные игры",
+      "id": 1
+    },
+    {
+      "img": "./image/warhammer.png",
+      "clazz": "catalog-choice__same",
+      "path": "#",
+      "descr": "Варгеймы",
+      "id": 2
+    },
+    {
+      "img": "./image/paint.png",
+      "clazz": "catalog-choice__same",
+      "path": "#",
+      "descr": "Краски",
+      "id": 3
+    },
+    {
+      "img": "./image/magic.png",
+      "clazz": "catalog-choice__same",
+      "path": "#",
+      "descr": "Magic:the Cathering",
+      "id": 4
+    },
+    {
+      "img": "./image/cubic.png",
+      "clazz": "catalog-choice__same",
+      "path": "#",
+      "descr": "Весь каталог",
+      "id": 5
+    }
+  ],
+  "buyCarousel": [
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 1
+    },
+    {
+      "img": "./image/mars.png",
+      "descr": "На марсе",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 2
+    },
+    {
+      "img": "./image/horse.png",
+      "descr": "Broken Realms: Horrek's Dreadlance",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 3
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Orks: Ghazghkull Thraka Коллекционный выпуск",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 4
+    },
+    {
+      "img": "./image/galaxy.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 5
+    },
+    {
+      "img": "./image/teatr.png",
+      "descr": "Таверна Красный дракон",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 6
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 7
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 8
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 9
+    },
+    {
+      "img": "./image/mars.png",
+      "descr": "На марсе",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 10
+    },
+    {
+      "img": "./image/horse.png",
+      "descr": "Broken Realms: Horrek's Dreadlance",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 11
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Orks: Ghazghkull Thraka Коллекционный выпуск",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 12
+    },
+    {
+      "img": "./image/galaxy.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 13
+    },
+    {
+      "img": "./image/teatr.png",
+      "descr": "Таверна Красный дракон",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 14
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 15
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 16
+    },
+    {
+      "img": "./image/teatr.png",
+      "descr": "Таверна Красный дракон",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 17
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 18
+    },
+    {
+      "img": "./image/figure.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": null,
+      "price": "3657 ua",
+      "oldPrice": null,
+      "id": 19
+    }
+  ],
+  "offerCarousel": [
+    {
+      "img": "./image/galaxy.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 1
+    },
+    {
+      "img": "./image/teatr.png",
+      "descr": "Таверна Красный дракон",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 2
+    },
+    {
+      "img": "./image/girl.png",
+      "descr": "Гравити Фолз: Спасти Пухлю",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 3
+    },
+    {
+      "img": "./image/galaxy.png",
+      "descr": "Звездные войны. Внешнее кольцо",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 4
+    },
+    {
+      "img": "./image/teatr.png",
+      "descr": "Таверна Красный дракон",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 5
+    },
+    {
+      "img": "./image/girl.png",
+      "descr": "Гравити Фолз: Спасти Пухлю",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 6
+    },
+    {
+      "img": "./image/galaxy.png",
+      "descr": "Warhammer 40,000:Chaos Space Marines",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 7
+    },
+    {
+      "img": "./image/girl.png",
+      "descr": "Гравити Фолз: Спасти Пухлю",
+      "discount": "15%",
+      "price": "3657 ua",
+      "oldPrice": "4350 ua",
+      "id": 8
+    }
+  ],
+  "activity": [
+    {
+      "img": "./image/scary.png",
+      "descr1": "Halloween c GoldFish",
+      "date": "31 октября 2021 г. 19:00",
+      "descr2": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
+      "path": "#",
+      "id": 1
+    },
+    {
+      "img": "./image/war.png",
+      "descr1": "Турнир Warhammer",
+      "date": "9 ноября 2021 г. 18:30",
+      "descr2": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 2
+    },
+    {
+      "img": "./image/magic.png",
+      "descr1": "Турнир Волшебников",
+      "date": "8 ноября 2021 г. 14:30",
+      "descr2": "Готов сразиться в ожесточенной битве магов? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 3
+    },
+    {
+      "img": "./image/gathering.png",
+      "descr1": "Турнир Экстрималов",
+      "date": "8 июня 2021 г. 14:30",
+      "descr2": "Готов сразиться в ожесточенной битве? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 4
+    },
+    {
+      "img": "./image/scary.png",
+      "descr1": "Halloween c GoldFish",
+      "date": "31 октября 2021 г. 19:00",
+      "descr2": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
+      "path": "#",
+      "id": 5
+    },
+    {
+      "img": "./image/war.png",
+      "descr1": "Турнир Warhammer",
+      "date": "9 ноября 2021 г. 18:30",
+      "descr2": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 6
+    },
+    {
+      "img": "./image/magic.png",
+      "descr1": "Турнир Волшебников",
+      "date": "8 ноября 2021 г. 14:30",
+      "descr2": "Готов сразиться в ожесточенной битве магов? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 7
+    },
+    {
+      "img": "./image/gathering.png",
+      "descr1": "Турнир Экстрималов",
+      "date": "8 июня 2021 г. 14:30",
+      "descr2": "Готов сразиться в ожесточенной битве? Нет? Мы тебя обязтально научим!",
+      "path": "#",
+      "id": 8
+    }
+  ],
+  "moreInteres": [
+    {
+      "img": "./image/dark.png",
+      "descr1": "Аэронавтика Империалис: введение в игру",
+      "descr2": "Детально ознакомимся с правилами игры ",
+      "id": 1
+    },
+    {
+      "img": "./image/fire.png",
+      "descr1": "Лучшие настолки в Steam для игры с друзьми на карантине",
+      "descr2": "По рейтингу 2021",
+      "id": 2
+    },
+    {
+      "img": "./image/light.png",
+      "descr1": "Желанные, но маловероятные релизы ",
+      "descr2": "Небольшой список «а вот бы...»",
+      "id": 3
+    }
+  ],
+  "messedge": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117692",
+      "comment": "",
+      "id": 1672955391316
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117692",
+      "comment": "",
+      "id": 1672955894652
+    },
+    {
+      "name": "ssrgergh",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672956971557
+    },
+    {
+      "name": "ssrgergh",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672957414013
+    },
+    {
+      "name": "rtghrh",
+      "tel": "5656",
+      "comment": "",
+      "id": 1672957427189
+    },
+    {
+      "name": "ytyhjtyjt",
+      "tel": "767676767",
+      "comment": "",
+      "id": 1672957452826
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672957624686
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672957638391
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672957792829
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672958215029
+    },
+    {
+      "name": "ssrgergh",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672958264016
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672958725751
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672958784998
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672958906887
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672959182241
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672959243864
+    },
+    {
+      "name": "ssrgergh",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672960983610
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961293819
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961318259
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961487669
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961692612
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961792940
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961815876
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961904763
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672961993748
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672962355405
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672962746245
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1672962778052
+    }
+  ]
+}
