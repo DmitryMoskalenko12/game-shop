@@ -1,6 +1,6 @@
 .more-interes {
-  min-height: 444px;
-  padding: 85px 0 85px 0;
+  min-height: 579px;
+  padding-bottom: 85px;
   background: #E5E5E5;
   &__title {
     font-weight: 700;
@@ -96,6 +96,7 @@
 }
 @media(max-width: 575px) {
   .more-interes {
+    padding-bottom: 40px;
     &__title {
       font-size: 25px;
     }
