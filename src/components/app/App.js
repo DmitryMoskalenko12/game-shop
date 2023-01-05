@@ -7,6 +7,7 @@ import BuyCarousel from '../buyCarousel/BuyCarousel';
 import OfferCarousel from '../offerCarousel/OfferCarousel';
 import Activity from '../activity/Activity';
 import MoreInteres from '../moreInteres/MoreInteres';
+import About from '../about/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <OfferCarousel/>
     <Activity/>
     <MoreInteres/>
+    <About/>
     </>
   );
 }

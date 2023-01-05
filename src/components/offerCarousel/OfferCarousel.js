@@ -16,7 +16,7 @@ const OfferCarousel = () => {
   const slideIndexCarousel = useSelector(state => state.offerCarousel.slideIndex);
   let windowWidthResult = useSelector(state => state.offerCarousel.width);
   let windowWidth = useRef();
-  
+
   const [slideNumber, setSlideNumber] = useState(0);
   const [marginRight, setMarginRight] = useState(0);
  
