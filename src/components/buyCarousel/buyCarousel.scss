@@ -7,7 +7,7 @@
     font-weight: 700;
     font-size: 32px;
     color: #2A2A2A;
-    margin-left: 10px;
+    text-align: center;
   }
   &__window {
     width: 1110px;
@@ -19,19 +19,6 @@
   &__field {
     display: flex;
   }
- /*  &__discount {
-    position: absolute;
-    top: 21px;
-    right: 21px;
-    width: 69px;
-    height: 29px;
-    background: #F9A43F;
-    border-radius: 14px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-align: center;
-  } */
   &__card {
     position: relative;
     width: 255px;
@@ -131,22 +118,6 @@
     margin-top: 8px;
     margin-bottom: 14px;
   }
-  /* &__oldprice {
-    position: relative;
-    font-weight: 400;
-    font-size: 18px;
-    color: #2A2A2A;
-     &::after {
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 14px;
-      width: 45px;
-      height: 1px;
-      transform: rotate(-20deg);
-      border: 1px solid grey;
-     }
-  } */
   &__newprice {
     position: absolute;
     bottom: 110px;
@@ -212,7 +183,6 @@
       font-weight: 700;
       font-size: 32px;
       color: #2A2A2A;
-      margin-left: 76px;
     }
     &__window {
       width: 780px;
@@ -231,7 +201,6 @@
       font-weight: 700;
       font-size: 32px;
       color: #2A2A2A;
-      margin-left: 245px;
       margin-bottom: 30px;
     }
     &__card {
@@ -255,7 +224,6 @@
       font-weight: 700;
       font-size: 32px;
       color: #2A2A2A;
-      margin-left: 162px;
     }
     &__card {
       width: 255px;
@@ -280,7 +248,6 @@
       font-weight: 500;
       font-size: 18px;
       color: #2A2A2A;
-      margin-left: 98px;
       margin-bottom: 10px;
     }
     &__card {

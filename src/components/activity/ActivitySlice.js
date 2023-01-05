@@ -32,6 +32,7 @@ const activitySlice = createSlice({
     })
     .addCase(fetchActivity.fulfilled, (state, action) => {
       state.data = [...state.data, ...action.payload]
+      state.status = 'fulfilled';
     })
     .addCase(fetchActivity.rejected, state => {
       state.status = 'error'

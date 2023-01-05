@@ -6,6 +6,7 @@ import CatalogChoice from '../catalogChoice/CatalogChoice';
 import BuyCarousel from '../buyCarousel/BuyCarousel';
 import OfferCarousel from '../offerCarousel/OfferCarousel';
 import Activity from '../activity/Activity';
+import MoreInteres from '../moreInteres/MoreInteres';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <BuyCarousel/>
     <OfferCarousel/>
     <Activity/>
+    <MoreInteres/>
     </>
   );
 }

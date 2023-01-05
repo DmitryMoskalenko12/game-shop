@@ -10,6 +10,7 @@
     margin-bottom: 15px;
   }
   &__wrap {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 563px);
     grid-template-rows: repeat(auto-fill, 434px);
