@@ -29,7 +29,7 @@ const Footer = () => {
               <li className="footer__footlist"><a href="#">Magic: the Gathering</a></li>
               <li className="footer__footlist"><a href="#">Аксессуары для игр</a></li>
               <li className="footer__footlist"><a href="#">Краски </a></li>
-              <li className="footer__footlist"><a href="#">Аксессуары для моделизма</a></li>
+              <li className="footer__footlist"><a href="#">Аксессуары для <br /> моделизма</a></li>
           </ul>
           <ul className="footer__aboutus">
             <li className="footer__listabout"><a href="#">Правила клуба</a></li>
@@ -37,6 +37,8 @@ const Footer = () => {
             <li className="footer__listabout"><a href="#">О нас</a></li>
             <li className="footer__listabout"><a href="#">Контакты</a></li>
             <li className="footer__listabout"><a href="#">Блог</a></li>
+            <li className="none"><a href="#">Оплата и достака</a></li>
+            <li className="none"><a href="#">Гарантия и возврат</a></li>
           </ul>
           <ul className="footer__delivery">
             <li className="footer__paydel"><a href="#">Оплата и достака</a></li>
