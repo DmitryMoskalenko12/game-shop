@@ -67,8 +67,14 @@
     }
   }
 }
+@media(max-width: 991px){
+  .about {
+   padding-bottom: 50px;
+  }
+}
 @media(max-width: 575px){
   .about {
+    padding-bottom: 20px;
     &__title {
       font-size: 19px;
     }

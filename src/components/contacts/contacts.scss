@@ -8,11 +8,16 @@
     grid-template-rows: minmax(705px, auto);
     grid-auto-rows: minmax(705px, auto);
     column-gap: 117px;
+    justify-content: center;
   }
   &__title {
     font-weight: 700;
     font-size: 32px;
     color: #2A2A2A;
+  }
+  &__addrform {
+    width: 100%;
+    height: 100%;
   }
   &__block {
     display: flex;
@@ -122,8 +127,8 @@
     }
   }
   &__wrapimg {
-    width: 546.54px;
-    height: 672.42px;
+    width: 100%;
+    height: 100%;
     img {
       border-radius: 9px;
       width: 100%;
@@ -131,4 +136,90 @@
       object-fit: cover;
     }
   }
+}
+@media(max-width: 1199px) {
+  .contacts {
+    &__wrap {
+      grid-template-columns: 454px 428px;
+      column-gap: 56px;
+    }
+  }
+}
+@media(max-width: 991px) {
+  .contacts {
+    &__wrap {
+      grid-template-columns: 448px;
+      row-gap: 15px;
+      grid-template-rows: repeat(2, minmax(500px, auto));
+      grid-auto-rows: minmax(500px, auto);
+    }
+  }
+}
+@media(max-width: 575px) {
+  .contacts {
+    &__wrap {
+      grid-template-columns: 296px;
+      row-gap: 15px;
+      grid-template-rows: repeat(2, minmax(500px, auto));
+      grid-auto-rows: minmax(500px, auto);
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__addrform {
+      width: 100%;
+      height: 100%;
+    }
+    &__block {
+      margin-top: 10px;
+    }
+    &__wrappicture {
+      width: 23px;
+      height: 23px;
+    }
+    &__info {
+      font-size: 14px;
+      span {
+        font-size: 13px;
+      }
+    }
+    &__question {
+      font-size: 19px;
+      margin-top: 15px;
+      margin-bottom: 1px;
+    }
+    &__form {
+      width: 100%;
+    }
+    &__name, &__telefon {
+      div {
+        font-weight: 400;
+        font-size: 16px;
+        color: #2A2A2A;
+        margin-bottom: 7px;
+        margin-top: 14px;
+      }
+      input {
+        width: 305px;
+      }
+    }
+    &__comment {
+      div {
+        font-weight: 400;
+        font-size: 16px;
+        color: #2A2A2A;
+        margin-bottom: 7px;
+        margin-top: 14px;
+      }
+      textarea {
+        width: 305px;
+      }
+    }
+    &__subm {
+      width: 220px;
+    }
+    &__confid {
+      font-size: 12px;
+    }
+}
 }
