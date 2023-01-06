@@ -9,6 +9,7 @@ import Activity from '../activity/Activity';
 import MoreInteres from '../moreInteres/MoreInteres';
 import About from '../about/About';
 import Contacts from '../contacts/Contacts';
+import Footer from '../footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
     <MoreInteres/>
     <About/>
     <Contacts/>
+    <Footer/>
     </>
   );
 }
