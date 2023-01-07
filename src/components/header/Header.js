@@ -5,6 +5,7 @@ import lup from '../../icons/lup.png';
 import phone from '../../icons/phone.png';
 import human from '../../icons/human.png';
 import basket from '../../icons/bascet.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
@@ -19,10 +20,10 @@ const Header = () => {
     {clas: 'header__asideli', href: "#", content: 'Аксессуары для моделизма', id: 7}
   ]
   const asideLiDown = [
-    {clas: 'header__asideli', href: "#", content: 'Мероприятия'},
-    {clas: 'header__asideli', href: "#", content: 'Блог'},
-    {clas: 'header__asideli', href: "#", content: 'О центре'},
-    {clas: 'header__asideli', href: "#", content: 'Контакты'}
+    {clas: 'header__asideli', href: "#", content: 'Мероприятия', id: 1},
+    {clas: 'header__asideli', href: "#", content: 'Блог', id: 2},
+    {clas: 'header__asideli', href: "#", content: 'О центре', id: 3},
+    {clas: 'header__asideli', href: "#", content: 'Контакты',id: 4}
   ]
   
   useEffect(() => {
@@ -43,14 +44,14 @@ const Header = () => {
       <div className={burger ? "header__shadow" : ''}>
         <ul className={burger ? "header__asidemenu asideactive" : "header__asidemenu" }>
          {
-          asideLiUp.map(({clas, href, content, id}, i) => {
-            return  <li key={i} onClick={(e) => onActive(e)} className={`${clas} ${(activeLi === content) ? 'activeli' : ''}`}><a href={href}>{content}</a></li>
+          asideLiUp.map(({clas, href, content, id}) => {
+            return  <li key={id} onClick={(e) => onActive(e)} className={`${clas} ${(activeLi === content) ? 'activeli' : ''}`}><a href={href}>{content}</a></li>
           })
          }
           <li  className='header__hr'></li>
         {
-          asideLiDown.map(({clas, href, content}, i) => {
-          return <li onClick={(e) => onActive(e)} key={i} className={`${clas} ${(activeLi === content) ? 'activeli' : ''}`}><a href={href}>{content}</a></li>
+          asideLiDown.map(({clas, href, content, id}) => {
+          return <li onClick={(e) => onActive(e)} key={id} className={`${clas} ${(activeLi === content) ? 'activeli' : ''}`}><a href={href}>{content}</a></li>
           })
         } 
         </ul>
@@ -85,7 +86,7 @@ const Header = () => {
         </li>
         <li className="header__basket">
         <div className="header__wrapbasket">
-           <a href="#"><img src={basket} alt="human" /></a>
+           <Link to={'/basket'}><img src={basket} alt="basket" /></Link>
         </div>
         </li>
       </ul>

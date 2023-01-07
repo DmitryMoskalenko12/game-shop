@@ -31,7 +31,7 @@ const activitySlice = createSlice({
       state.status = 'loading'
     })
     .addCase(fetchActivity.fulfilled, (state, action) => {
-      state.data = [...state.data, ...action.payload]
+      state.data = action.payload
       state.status = 'fulfilled';
     })
     .addCase(fetchActivity.rejected, state => {

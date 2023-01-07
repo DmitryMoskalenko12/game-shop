@@ -6,6 +6,9 @@ import shop from '../../icons/shop.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useRef,useState } from 'react';
 import { fetchBuyCarousel, offset, slideIndex, width } from './buyCarouselSlice';
+import { getCardsForBasket } from '../basket/basketSlice';
+
+import useHttp from '../../hooks/http.hook';
 
 const BuyCarousel = () => {
 
@@ -16,10 +19,12 @@ const BuyCarousel = () => {
   const slideIndexCarousel = useSelector(state => state.buyCarousel.slideIndex);
   let windowWidthResult = useSelector(state => state.buyCarousel.width);
   let windowWidth = useRef();
-  
+
   const [slideNumber, setSlideNumber] = useState(0);
   const [marginRight, setMarginRight] = useState(0);
- 
+
+  const {request} = useHttp();
+
   useEffect(() => {
     if(window.screen.availWidth <= 1399 && window.screen.availWidth >= 1199){
     setSlideNumber(/* 7 */ 4)
@@ -73,6 +78,13 @@ const BuyCarousel = () => {
    dispatch(fetchBuyCarousel())
   },[])
 
+
+const getUniclIdProduct = (id) => {
+ request(`http://localhost:3001/buyCarousel/${id}`)
+ .then(res => dispatch(getCardsForBasket(res)))
+ .catch(() => console.log('error'))
+}
+
   return(
     <section className='buy-carousel'>
       <div className="container">
@@ -113,7 +125,7 @@ const BuyCarousel = () => {
                   </div>
 
                  <div className="buy-carousel__wrapbut">
-                  <Button style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
+                    <Button onClick = {() => getUniclIdProduct(id)} style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
                         В корзину
                         <span style={{marginLeft: '10px'}}  className="buy-carousel__wrapshop">
                           <img src={shop} alt="shop" />

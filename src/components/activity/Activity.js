@@ -1,30 +1,34 @@
 import './activity.scss';
-import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { fetchActivity, page } from './ActivitySlice';
 import useHttp from '../../hooks/http.hook';
 
 const Activity = () => {
 
-  const activityData = useSelector(state => state.activity.data);
-  const status = useSelector(state => state.activity.status);
-  const pageActivity = useSelector(state => state.activity.page);
-  const db = useSelector(state => state.activity.db);
-  const dispatch = useDispatch();
   const {request} = useHttp();
   const [baseLength, setBaseLength] = useState([]);
+  
+  const [limit, setLimit] = useState(2);
+  const [page, setPage] = useState(1);
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(false);
 
+  const getData = () => {
+      request(`http://localhost:3001/activity?_limit=${limit}&_page=${page}`)
+      .then((res => setData([...data, ...res])))
+      .catch(() => setError(true))
+  }
+ 
   useEffect(() => {
-    dispatch(fetchActivity(pageActivity))
-  },[pageActivity])
+    getData()
+  },[page])
   
   useEffect(() => {
-   request(db)
+   request('http://localhost:3001/activity')
    .then(res => setBaseLength(res))
   },[])
 
-  const error = status === 'error' ? <div style = {{position: 'absolute', top: "50%", left: '50%'}}>Error</div> : null;
-  const content = !(error) ?  activityData.map(({img, descr1,path, date, descr2, id}) => {
+  const fail = error ? <div style = {{position: 'absolute', top: "50%", left: '50%'}}>Error</div> : null;
+  const content = !error ?  data.map(({img, descr1,path, date, descr2, id}) => {
     return(
       <div key={id} className="activity__card">
         <div className="activity__wrapimg">
@@ -42,16 +46,16 @@ const Activity = () => {
         </a>
       </div>
     )
-  }) : null;
+  }) : null
   return(
     <section className='activity'>
       <div className="container">
        <h1 className="activity__title">Ближайшие мероприятия</h1>
         <div className="activity__wrap">
+         {fail}
          {content}
-         {error}
         </div>
-        <button className='activity__button' onClick = {() => {dispatch(page(pageActivity + 1))}} style = {{display: activityData.length === baseLength.length ? 'none' : 'block'}}>Показать еще</button>
+        <button className='activity__button' onClick = {() => {setPage(page + 1)}} style = {{display: data.length === baseLength.length ? 'none' : 'block'}}>Показать еще</button>
       </div>
     </section>
   )
