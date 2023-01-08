@@ -6,10 +6,12 @@ import phone from '../../icons/phone.png';
 import human from '../../icons/human.png';
 import basket from '../../icons/bascet.png';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
-  const [activeLi, setActiveLi] = useState(null)
+  const [activeLi, setActiveLi] = useState(null);
+  const lengthBasket = useSelector(state => state.basket.data);
   const asideLiUp = [
     {clas: 'header__asideli', href: "#", content: 'Настольные игры', id: 1},
     {clas: 'header__asideli', href: "#", content: 'Warhammer 40000', id: 2},
@@ -34,7 +36,7 @@ const Header = () => {
   }
   },[burger])
 
-  const onActive =(e) => {
+  const onActive = (e) => {
     setActiveLi(e.currentTarget.textContent)
    }
 
@@ -86,6 +88,7 @@ const Header = () => {
         </li>
         <li className="header__basket">
         <div className="header__wrapbasket">
+        <div className='header__count'>{lengthBasket.length}</div>
            <Link to={'/basket'}><img src={basket} alt="basket" /></Link>
         </div>
         </li>

@@ -6,16 +6,20 @@ import shop from '../../icons/shop.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useRef,useState } from 'react';
 import { fetchOfferCarousel, offset, slideIndex, width } from './offerCarouselSlice';
+import useHttp from '../../hooks/http.hook';
+import { getCardsForBasket } from '../basket/basketSlice';
 
 const OfferCarousel = () => {
 
   const offerCards = useSelector(state => state.offerCarousel.data);
   const status = useSelector(state => state.offerCarousel.status);
+  const basket = useSelector(state => state.basket.data);
   const dispatch = useDispatch();
   let offsetCarousel = useSelector(state => state.offerCarousel.offset);
   const slideIndexCarousel = useSelector(state => state.offerCarousel.slideIndex);
   let windowWidthResult = useSelector(state => state.offerCarousel.width);
   let windowWidth = useRef();
+  const {request} = useHttp();
 
   const [slideNumber, setSlideNumber] = useState(0);
   const [marginRight, setMarginRight] = useState(0);
@@ -73,6 +77,13 @@ const OfferCarousel = () => {
    dispatch(fetchOfferCarousel())
   },[])
 
+  const getUniclIdProduct = (id) => {
+ 
+    request(`http://localhost:3001/offerCarousel/${id}`)
+    .then(res => dispatch(getCardsForBasket(res)))
+    .catch(() => console.log('error'))
+   }
+
   return(
     <section className='offer-carousel'>
       <div className="container">
@@ -115,7 +126,7 @@ const OfferCarousel = () => {
                   </div>
 
                  <div className="offer-carousel__wrapbut">
-                  <Button style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
+                  <Button disabled = {basket.find(item => item.id === id)} onClick = {() => getUniclIdProduct(id)} style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
                         В корзину
                         <span style={{marginLeft: '10px'}}  className="offer-carousel__wrapshop">
                           <img src={shop} alt="shop" />

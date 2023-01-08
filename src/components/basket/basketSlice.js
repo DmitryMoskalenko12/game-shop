@@ -16,13 +16,16 @@ const basketSlice = createSlice({
     },
     deleteProduct: (state, action) => {
       state.data = state.data.filter(item => item.id !== action.payload)
+    },
+    updateBase: (state, action) => {
+      state.data =  action.payload
     }
   }
 
 })
-
+ 
 const {actions, reducer} = basketSlice;
-export const {getCardsForBasket, deleteProduct} = actions;
+export const {getCardsForBasket, deleteProduct, updateBase} = actions;
 
 export default reducer;
 

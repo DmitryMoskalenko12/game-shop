@@ -582,7 +582,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 1
@@ -590,7 +590,7 @@
     {
       "img": "./image/mars.png",
       "descr": "На марсе",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 2
@@ -598,7 +598,7 @@
     {
       "img": "./image/horse.png",
       "descr": "Broken Realms: Horrek's Dreadlance",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 3
@@ -606,7 +606,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Orks: Ghazghkull Thraka Коллекционный выпуск",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 4
@@ -614,7 +614,7 @@
     {
       "img": "./image/galaxy.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 5
@@ -622,7 +622,7 @@
     {
       "img": "./image/teatr.png",
       "descr": "Таверна Красный дракон",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 6
@@ -630,7 +630,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 7
@@ -638,7 +638,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 8
@@ -646,7 +646,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 9
@@ -654,7 +654,7 @@
     {
       "img": "./image/mars.png",
       "descr": "На марсе",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 10
@@ -662,7 +662,7 @@
     {
       "img": "./image/horse.png",
       "descr": "Broken Realms: Horrek's Dreadlance",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 11
@@ -670,7 +670,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Orks: Ghazghkull Thraka Коллекционный выпуск",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 12
@@ -678,7 +678,7 @@
     {
       "img": "./image/galaxy.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 13
@@ -686,7 +686,7 @@
     {
       "img": "./image/teatr.png",
       "descr": "Таверна Красный дракон",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 14
@@ -694,7 +694,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 15
@@ -702,7 +702,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 16
@@ -710,7 +710,7 @@
     {
       "img": "./image/teatr.png",
       "descr": "Таверна Красный дракон",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 17
@@ -718,7 +718,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 18
@@ -726,7 +726,7 @@
     {
       "img": "./image/figure.png",
       "descr": "Warhammer 40,000:Chaos Space Marines",
-      "discount": null,
+      "count": 1,
       "price": "3657 ua",
       "oldPrice": null,
       "id": 19
@@ -739,7 +739,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 1
+      "count" : 1,
+      "id": 20
     },
     {
       "img": "./image/teatr.png",
@@ -747,7 +748,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 2
+      "count" : 1,
+      "id": 21
     },
     {
       "img": "./image/girl.png",
@@ -755,7 +757,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 3
+      "count" : 1,
+      "id": 22
     },
     {
       "img": "./image/galaxy.png",
@@ -763,7 +766,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 4
+      "count" : 1,
+      "id": 23
     },
     {
       "img": "./image/teatr.png",
@@ -771,7 +775,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 5
+      "count" : 1,
+      "id": 24
     },
     {
       "img": "./image/girl.png",
@@ -779,7 +784,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 6
+      "count" : 1,
+      "id": 25
     },
     {
       "img": "./image/galaxy.png",
@@ -787,7 +793,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 7
+      "count" : 1,
+      "id": 26
     },
     {
       "img": "./image/girl.png",
@@ -795,7 +802,8 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "id": 8
+      "count" : 1,
+      "id": 27
     }
   ],
   "activity": [
@@ -890,6 +898,12 @@
       "tel": "380996117693",
       "comment": "",
       "id": 1673047466555
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1673196713093
     }
   ]
 }

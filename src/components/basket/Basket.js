@@ -1,17 +1,40 @@
 import del from '../../icons/del.png';
-import check from '../../icons/check.png';
 import './basket.scss';
 import { Link } from 'react-router-dom';
-import { showProduct } from './basketSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchBasket, deleteProduct } from './basketSlice';
-import { useEffect, useState } from 'react';
+import { deleteProduct, updateBase } from './basketSlice';
+import { useState } from 'react';
 
 const Basket = () => {
 const dispatch = useDispatch();
 const basketData = useSelector(state => state.basket.data);
+const [promokod, setPromokod]  = useState('');
+const finalSum = basketData.map(item => item.price).map(item => parseInt(item)).reduce((sum, current) => sum + current, 0);
+const [finalPrice, setFinalPrice] = useState((finalSum / 100) * 30);
 
+const onPlus = (id) => {
+  dispatch(updateBase(basketData.map(prod => {
+  if (prod.id === id) {
+    return {
+      ...prod,
+      count: prod.count + 1
+    }
+  }
+  return prod
+  })))
+}
 
+const onMinus = (id) => {
+  dispatch(updateBase(basketData.map(prod => {
+  if (prod.id === id) {
+    return {
+      ...prod,
+      count: prod.count <= 1 ? 1 : prod.count - 1
+    }
+  }
+  return prod
+  }))) 
+}
   return(
     <section className="basket">
       <div className="container">
@@ -24,39 +47,41 @@ const basketData = useSelector(state => state.basket.data);
        <div className="basket__allcontent">
         <div className="basket__cardwrap">
            {
-            basketData.map(({img, descr, price, id}, i) => {
-              return(
-                <div key={id} className="basket__card">
-                <div className="basket__wrapimg">
-                  <img src={img} alt="manch" />
-                </div>
-  
-                <div className="basket__name">{descr}</div>
-                <div className="basket__price">{price}</div>
-  
-                <div className="basket__calc">
-                  <button /* onClick={}  */className="basket__plus">+</button>
-                  <div className="basket__num">{}шт</div>
-                  <button className="basket__minus">-</button>
-                </div>
-  
-                <button onClick={() => dispatch(deleteProduct(id))} className="basket__delete">
-                  <img src={del} alt="delete" />
-                </button>
+           basketData.length === 0 ? <div style = {{fontSize: '22px', fontWeight: '700', color: '#2A2A2A' }}>Корзина пуста</div> :  basketData.map(({img, descr, price, id, count}) => {
+            return(
+              <div key={id} className="basket__card">
+              <div className="basket__wrapimg">
+                <img src={img} alt="manch" />
               </div>
-              )
-            })
+
+              <div className="basket__name">{descr}</div>
+              <div className="basket__price">{price}</div>
+
+              <div className="basket__calc">
+                <button onClick={() => onPlus(id)} className="basket__plus">+</button>
+                <div className="basket__num">{count}шт</div>
+                <button onClick={() => onMinus(id)} className="basket__minus">-</button>
+              </div>
+
+              <button onClick={() => dispatch(deleteProduct(id))} className="basket__delete">
+                <img src={del} alt="delete" />
+              </button>
+            </div>
+            )
+          })
            }
           </div>
 
           <div className="basket__order">
-            <div className="basket__finalprice">Сумма: <span>{} ua</span></div>
+            <div className="basket__finalprice">Сумма: <span>{promokod === 'hello'.toLowerCase() ? finalPrice.toFixed() : finalSum} ua</span></div>
             <label className='basket__promo'>
               <div className="basket__promodescr">Промокод:</div>
               <div className="basket__wrapinput">
-              <input type="text" name='promo'/>
+              <input value={promokod} onChange={(e) => setPromokod(e.target.value)} type="text" name='promo'/>
               <span className="basket__check">
-                <img src={check} alt="check" />
+                <svg width="15" height="13" viewBox="0 0 15 13" fill='none' xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.16699 6.5L5.91699 11.25L13.8337 1.75" stroke={promokod === 'hello' ? 'green': "#2A2A2A"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </span>
               </div>
             </label>
