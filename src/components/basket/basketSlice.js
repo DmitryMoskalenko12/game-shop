@@ -2,7 +2,9 @@ import { createSelector, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   data: [],
-  status: 'idle'
+  status: 'idle',
+  unicId: 0
+
 }
 
 const basketSlice = createSlice({
@@ -11,24 +13,16 @@ const basketSlice = createSlice({
   reducers: {
     getCardsForBasket: (state, action) => {
       state.data = [...state.data, action.payload]
+    },
+    deleteProduct: (state, action) => {
+      state.data = state.data.filter(item => item.id !== action.payload)
     }
   }
 
 })
 
 const {actions, reducer} = basketSlice;
-export const {getCardsForBasket} = actions;
+export const {getCardsForBasket, deleteProduct} = actions;
 
 export default reducer;
 
-/* export const showProduct = createSelector(
-  state => state.buyCarousel.uniId,
-  state => state.basket.data,
-  (id, data) => {
-   if(id === 0) {
-    return []
-   } else {
-   return data
-   }
-  }
-) */

@@ -8,4 +8,7 @@
   color: #FFFFFF;
   border: none;
   text-align: center;
+  &:disabled {
+    background: grey;
+  }
 }

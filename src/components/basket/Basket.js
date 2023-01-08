@@ -1,16 +1,15 @@
 import del from '../../icons/del.png';
-import manch from '../../image/manch.png';
 import check from '../../icons/check.png';
 import './basket.scss';
 import { Link } from 'react-router-dom';
 import { showProduct } from './basketSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchBasket } from './basketSlice';
-import { useEffect } from 'react';
+import { fetchBasket, deleteProduct } from './basketSlice';
+import { useEffect, useState } from 'react';
 
 const Basket = () => {
 const dispatch = useDispatch();
-const basketData = useSelector(state => state.basket.data)
+const basketData = useSelector(state => state.basket.data);
 
 
   return(
@@ -25,7 +24,7 @@ const basketData = useSelector(state => state.basket.data)
        <div className="basket__allcontent">
         <div className="basket__cardwrap">
            {
-            basketData.map(({img, descr, price, id}) => {
+            basketData.map(({img, descr, price, id}, i) => {
               return(
                 <div key={id} className="basket__card">
                 <div className="basket__wrapimg">
@@ -36,12 +35,12 @@ const basketData = useSelector(state => state.basket.data)
                 <div className="basket__price">{price}</div>
   
                 <div className="basket__calc">
-                  <button className="basket__plus">+</button>
-                  <div className="basket__num">2шт</div>
+                  <button /* onClick={}  */className="basket__plus">+</button>
+                  <div className="basket__num">{}шт</div>
                   <button className="basket__minus">-</button>
                 </div>
   
-                <button className="basket__delete">
+                <button onClick={() => dispatch(deleteProduct(id))} className="basket__delete">
                   <img src={del} alt="delete" />
                 </button>
               </div>
@@ -51,7 +50,7 @@ const basketData = useSelector(state => state.basket.data)
           </div>
 
           <div className="basket__order">
-            <div className="basket__finalprice">Сумма: <span>7476 ua</span></div>
+            <div className="basket__finalprice">Сумма: <span>{} ua</span></div>
             <label className='basket__promo'>
               <div className="basket__promodescr">Промокод:</div>
               <div className="basket__wrapinput">

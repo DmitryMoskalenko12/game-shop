@@ -14,6 +14,7 @@ const BuyCarousel = () => {
 
   const buyCards = useSelector(state => state.buyCarousel.data);
   const status = useSelector(state => state.buyCarousel.status);
+  const basket = useSelector(state => state.basket.data);
   const dispatch = useDispatch();
   let offsetCarousel = useSelector(state => state.buyCarousel.offset);
   const slideIndexCarousel = useSelector(state => state.buyCarousel.slideIndex);
@@ -80,6 +81,7 @@ const BuyCarousel = () => {
 
 
 const getUniclIdProduct = (id) => {
+ 
  request(`http://localhost:3001/buyCarousel/${id}`)
  .then(res => dispatch(getCardsForBasket(res)))
  .catch(() => console.log('error'))
@@ -92,7 +94,7 @@ const getUniclIdProduct = (id) => {
         <div ref={windowWidth} className="buy-carousel__window">
           <div style={{width: `${100 * buyCards.length + '%'}`,position: 'relative', transition: '0.7s all', transform: `translateX(-${offsetCarousel}px)`}} className="buy-carousel__field">
             {
-              buyCards.map(({img, descr, price, id}) => {
+              buyCards.map(({img, descr, price, id},i) => {
                 return(
                       <div key={id} className="buy-carousel__card">
                       <div className="buy-carousel__wrapimg">
@@ -125,7 +127,7 @@ const getUniclIdProduct = (id) => {
                   </div>
 
                  <div className="buy-carousel__wrapbut">
-                    <Button onClick = {() => getUniclIdProduct(id)} style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
+                    <Button disabled = {basket.find(item => item.id === id)} onClick = {() =>  {getUniclIdProduct(id)}} style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
                         В корзину
                         <span style={{marginLeft: '10px'}}  className="buy-carousel__wrapshop">
                           <img src={shop} alt="shop" />
