@@ -66,6 +66,23 @@ const onMinus = (id) => {
               <button onClick={() => dispatch(deleteProduct(id))} className="basket__delete">
                 <img src={del} alt="delete" />
               </button>
+
+              <div className="basket__for575">
+                <div className="basket__name575">{descr}</div>
+                <div className="basket__price575">{price}</div>
+
+              <div className="basket__delplusminus">
+                 <div className="basket__calc575">
+                  <button onClick={() => onPlus(id)} className="basket__plus575">+</button>
+                  <div className="basket__num575">{count}шт</div>
+                  <button onClick={() => onMinus(id)} className="basket__minus575">-</button>
+                 </div>
+
+                <button onClick={() => dispatch(deleteProduct(id))} className="basket__delete575">
+                  <img src={del} alt="delete" />
+                </button>
+              </div>
+              </div>
             </div>
             )
           })

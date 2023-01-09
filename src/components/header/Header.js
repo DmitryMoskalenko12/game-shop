@@ -68,7 +68,7 @@ const Header = () => {
         </li>
         <li className="header__logo">
           <div className="header__wraplogo">
-            <a href="#"><img src={logo} alt="logo" /></a>
+            <Link to={'/'}><img src={logo} alt="logo" /></Link>
           </div>
         </li>
         <li className="header__search">
