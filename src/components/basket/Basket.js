@@ -9,8 +9,8 @@ const Basket = () => {
 const dispatch = useDispatch();
 const basketData = useSelector(state => state.basket.data);
 const [promokod, setPromokod]  = useState('');
-const finalSum = basketData.map(item => item.price).map(item => parseInt(item)).reduce((sum, current) => sum + current, 0);
-const [finalPrice, setFinalPrice] = useState((finalSum / 100) * 30);
+const finalSum = basketData.map(item => parseInt(item.price) * item.count).reduce((sum, current) => sum + current, 0);
+let finalPrice = (finalSum / 100) * 30;
 
 const onPlus = (id) => {
   dispatch(updateBase(basketData.map(prod => {

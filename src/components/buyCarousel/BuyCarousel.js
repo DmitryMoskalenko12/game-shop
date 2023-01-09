@@ -94,7 +94,7 @@ const getUniclIdProduct = (id) => {
         <div ref={windowWidth} className="buy-carousel__window">
           <div style={{width: `${100 * buyCards.length + '%'}`,position: 'relative', transition: '0.7s all', transform: `translateX(-${offsetCarousel}px)`}} className="buy-carousel__field">
             {
-              buyCards.map(({img, descr, price, id},i) => {
+              buyCards.map(({img, descr, price, id}) => {
                 return(
                       <div key={id} className="buy-carousel__card">
                       <div className="buy-carousel__wrapimg">

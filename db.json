@@ -739,7 +739,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 20
     },
     {
@@ -748,7 +748,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 21
     },
     {
@@ -757,7 +757,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 22
     },
     {
@@ -766,7 +766,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 23
     },
     {
@@ -775,7 +775,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 24
     },
     {
@@ -784,7 +784,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 25
     },
     {
@@ -793,7 +793,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 26
     },
     {
@@ -802,7 +802,7 @@
       "discount": "15%",
       "price": "3657 ua",
       "oldPrice": "4350 ua",
-      "count" : 1,
+      "count": 1,
       "id": 27
     }
   ],
@@ -904,6 +904,12 @@
       "tel": "380996117693",
       "comment": "",
       "id": 1673196713093
+    },
+    {
+      "name": "Дмитрий",
+      "tel": "380996117693",
+      "comment": "",
+      "id": 1673222860079
     }
   ]
 }
