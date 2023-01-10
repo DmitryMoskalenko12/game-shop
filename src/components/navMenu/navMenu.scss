@@ -20,6 +20,11 @@
       text-decoration: none;
     }
   }
+  &__wrapburg-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__burger {
     display: flex;
     flex-direction: column;

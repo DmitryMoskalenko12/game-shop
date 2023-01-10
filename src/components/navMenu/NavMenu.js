@@ -5,6 +5,7 @@ import fb from '../../icons/fb.png';
 import Modal from '../modal/Modal';
 import Catalog from '../catalog/Catalog';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavMenu = () => {
   const [modal, setModal] = useState(false);
@@ -13,17 +14,17 @@ const NavMenu = () => {
     <nav className="menu">
      <div className="container">
       <ul className="menu__main">
-          <li onClick={() => setModal(true)} className="menu__catalog">
-           <a href="#">
-            <div className="menu__burger">
+          <li className="menu__catalog">
+            <div className="menu__wrapburg-catalog">
+              <a href="#">
+              <div onClick={() => setModal(true)} className="menu__burger">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-              <div className="menu__textcatalog">
-                  Каталог
-              </div>
-           </a>
+            </a>
+            <div className="menu__textcatalog"><Link to={'/catalog'}>Каталог</Link></div>
+            </div>
           </li>
           <li className='menu__link'><a href="#">Wharhammer</a></li>
           <li className='menu__link'><a href="#">Magic:the Cathering</a></li>

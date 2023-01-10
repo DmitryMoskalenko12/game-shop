@@ -1,0 +1,17 @@
+.catalog-header {
+  min-height: 234px;
+  padding-top: 47px;
+  padding-bottom: 76px;
+  background: url('../../../image/header.png') center center/cover no-repeat;
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+  }
+  &__mini-title {
+    width: 313px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}

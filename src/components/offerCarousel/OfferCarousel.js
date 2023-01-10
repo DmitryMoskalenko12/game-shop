@@ -1,18 +1,14 @@
 import './offerCarousel.scss';
-import people from '../../icons/people.png';
-import timer from '../../icons/timer.png';
-import Button from '../UI/button/Button';
-import shop from '../../icons/shop.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useRef,useState } from 'react';
 import { fetchOfferCarousel, offset, slideIndex, width } from './offerCarouselSlice';
 import useHttp from '../../hooks/http.hook';
 import { getCardsForBasket } from '../basket/basketSlice';
+import OfferCarouselCard from './OfferCarouselCard';
 
 const OfferCarousel = () => {
 
   const offerCards = useSelector(state => state.offerCarousel.data);
-  const status = useSelector(state => state.offerCarousel.status);
   const basket = useSelector(state => state.basket.data);
   const dispatch = useDispatch();
   let offsetCarousel = useSelector(state => state.offerCarousel.offset);
@@ -44,12 +40,13 @@ const OfferCarousel = () => {
   },[])
 
   const next = () => {
+
     if (slideIndexCarousel === offerCards.length) {
       dispatch(slideIndex(1))
     }else {
       dispatch(slideIndex(slideIndexCarousel + 1))
     }
-    if (offsetCarousel == (+windowWidthResult + +marginRight) * (offerCards.length / slideNumber === offerCards.length ? offerCards.length - 1 : Math.ceil(offerCards.length / slideNumber - 1)) ) {
+    if (offsetCarousel === (+windowWidthResult + +marginRight) * (offerCards.length / slideNumber === offerCards.length ? offerCards.length - 1 : Math.ceil(offerCards.length / slideNumber - 1)) ) {
       dispatch(offset(0))
     } else {
       dispatch(offset(offsetCarousel += (+windowWidthResult + +marginRight)))
@@ -57,12 +54,13 @@ const OfferCarousel = () => {
   }
 
   const prev = () => {
-    if (slideIndexCarousel == 1) {
+
+    if (slideIndexCarousel === 1) {
       dispatch(slideIndex(offerCards.length))
     }else {
       dispatch(slideIndex(slideIndexCarousel - 1))
     }
-    if (offsetCarousel == 0) {
+    if (offsetCarousel === 0) {
       dispatch(offset(offsetCarousel = (+windowWidthResult + +marginRight) * (offerCards.length / slideNumber === offerCards.length ? offerCards.length - 1 : Math.ceil(offerCards.length / slideNumber - 1))))
     } else {
       dispatch(offset(offsetCarousel -= (+windowWidthResult + +marginRight)))
@@ -71,10 +69,12 @@ const OfferCarousel = () => {
 
   useEffect(() => {
     dispatch(width((getComputedStyle(windowWidth.current).width.replace(/\D/img, ''))))
+    //eslint-disable-next-line
   },[])
 
   useEffect(() => {
    dispatch(fetchOfferCarousel())
+   //eslint-disable-next-line
   },[])
 
   const getUniclIdProduct = (id) => {
@@ -93,50 +93,7 @@ const OfferCarousel = () => {
             {
               offerCards.map(({img, descr, price, id, discount, oldPrice}) => {
                 return(
-                      <div key={id} className="offer-carousel__card">
-                      <div className="offer-carousel__discount">{discount}</div>
-                      <div className="offer-carousel__wrapimg">
-                        <img src={img} alt={descr} />
-                      </div>
-
-                      <div className="offer-carousel__config">
-                        <div className="offer-carousel__people">
-                          <div className="offer-carousel__peopleimg">
-                            <img src={people} alt="people" />
-                          </div>
-                          <div className="offer-carousel__number">
-                            2-4
-                        </div>
-                      </div>
-                    <div className="offer-carousel__timer">
-                      <div className="offer-carousel__timerimg">
-                          <img src={timer} alt="timer" />
-                      </div>
-                      <div className="offer-carousel__time">
-                        30-60
-                      </div>
-                    </div>
-                    <div className="offer-carousel__age">18+</div>
-                  </div>
-                  <div className="offer-carousel__descr">{descr}</div>
-
-                  <div className="offer-carousel__price">
-                   <div className="offer-carousel__oldprice">{oldPrice}</div>
-                   <div className="offer-carousel__newprice">{price}</div>
-                  </div>
-
-                 <div className="offer-carousel__wrapbut">
-                  <Button disabled = {basket.find(item => item.id === id)} onClick = {() => getUniclIdProduct(id)} style={{display:'block', margin: '0 auto', marginBottom: '10px'}}>
-                        В корзину
-                        <span style={{marginLeft: '10px'}}  className="offer-carousel__wrapshop">
-                          <img src={shop} alt="shop" />
-                        </span>
-                    </Button>
-                    <Button style={{background: 'transparent', border: '2px solid #F9A43F', color: '#F9A43F',display:'block', margin: '0 auto'}}>
-                      Купить в 1 клик
-                    </Button>
-                 </div>
-                </div>
+                      <OfferCarouselCard key={id} img = {img} descr = {descr} price = {price} id = {id} discount = {discount} oldPrice = {oldPrice} getUniclIdProduct = {getUniclIdProduct} basket = {basket}/>
                 )
               })
             }

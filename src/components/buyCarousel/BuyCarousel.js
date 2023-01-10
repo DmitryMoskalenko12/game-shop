@@ -10,7 +10,6 @@ import useHttp from '../../hooks/http.hook';
 const BuyCarousel = () => {
 
   const buyCards = useSelector(state => state.buyCarousel.data);
-  const status = useSelector(state => state.buyCarousel.status);
   const basket = useSelector(state => state.basket.data);
   const dispatch = useDispatch();
   let offsetCarousel = useSelector(state => state.buyCarousel.offset);
@@ -48,7 +47,7 @@ const BuyCarousel = () => {
     }else {
       dispatch(slideIndex(slideIndexCarousel + 1))
     }
-    if (offsetCarousel == (+windowWidthResult + +marginRight) * (buyCards.length / slideNumber === buyCards.length ? buyCards.length - 1 : Math.ceil(buyCards.length / slideNumber - 1)) ) {
+    if (offsetCarousel === (+windowWidthResult + +marginRight) * (buyCards.length / slideNumber === buyCards.length ? buyCards.length - 1 : Math.ceil(buyCards.length / slideNumber - 1)) ) {
       dispatch(offset(0))
     } else {
       dispatch(offset(offsetCarousel += (+windowWidthResult + +marginRight)))
@@ -56,12 +55,12 @@ const BuyCarousel = () => {
   }
 
   const prev = () => {
-    if (slideIndexCarousel == 1) {
+    if (slideIndexCarousel === 1) {
       dispatch(slideIndex(buyCards.length))
     }else {
       dispatch(slideIndex(slideIndexCarousel - 1))
     }
-    if (offsetCarousel == 0) {
+    if (offsetCarousel === 0) {
       dispatch(offset(offsetCarousel = (+windowWidthResult + +marginRight) * (buyCards.length / slideNumber === buyCards.length ? buyCards.length - 1 : Math.ceil(buyCards.length / slideNumber - 1)) ))
     } else {
       dispatch(offset(offsetCarousel -= (+windowWidthResult + +marginRight)))
@@ -70,10 +69,12 @@ const BuyCarousel = () => {
 
   useEffect(() => {
     dispatch(width((getComputedStyle(windowWidth.current).width.replace(/\D/img, ''))))
+    //eslint-disable-next-line
   },[])
 
   useEffect(() => {
    dispatch(fetchBuyCarousel())
+   //eslint-disable-next-line
   },[])
 
 
